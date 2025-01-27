@@ -13,13 +13,21 @@ import { jsPDF } from 'jspdf';
 const Certificate = () => {
 
   const [name, setName] = useState('');
+  const [certType, setCertType] = useState('');
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const storedName = localStorage.getItem('name');
     if (storedName) {
-    setName(storedName);
+      setName(storedName);
     }
+
+    const storedCertType = localStorage.getItem('certType');
+    if (storedCertType) {
+      setCertType(storedCertType);
+    }
+
+
 
     const downloadImageButton = document.getElementById('downloadImage');
     const handleDownloadImage = () => {
@@ -32,6 +40,7 @@ const Certificate = () => {
           link.click();
         });
       }
+      window.removeEventListener('resize', handleResize);
     };
 
     if (downloadImageButton) {
@@ -43,8 +52,9 @@ const Certificate = () => {
       const certificateContent = document.getElementById('certificateContent');
       if (certificateContent) {
         html2canvas(certificateContent).then(canvas => {
-          const imgData = canvas.toDataURL('image/png');
           const pdf = new jsPDF('landscape');
+          pdf.addImage(imgData, 'PNG', 10, 10, canvas.width, canvas.height);
+          const imgData = canvas.toDataURL('image/png');
           pdf.addImage(imgData, 'PNG', 10, 10);
           pdf.save('certificate.pdf');
         });
@@ -142,8 +152,8 @@ const Certificate = () => {
 
         <div className="lg:w-[800px]">
           <div className="bg-white lg:w-[850px] lg:h-[600px] lg:ml-4 lg:p-10">
-            <div className="p-5 bg-purple-900 text-white text-4xl tracking-widest ">
-              CERTIFICATE OF PARTICIPATION
+            <div className="p-5 bg-purple-900 text-white text-4xl tracking-widest uppercase ">
+              CERTIFICATE OF {certType}
             </div>
 
             <div className="font-bold lg:mx-[200px] lg:mt-5 italic">
@@ -201,8 +211,9 @@ const Certificate = () => {
 
       
       <div className="mt-10 flex  text-white space-x-3 ">
-        <button id="downloadImage" className="bg-purple-900 py-2 px-5 rounded-2xl hover:bg-black ">Download as Image</button>
-        <button id="downloadPDF" className="bg-purple-900 py-2 px-5 rounded-2xl hover:bg-purple-800 " >Download as PDF</button>
+        <button id="downloadImage" className="bg-purple-900 py-2 px-5 rounded-2xl hover:bg-purple-800
+         ">Download as Image</button>
+        {/* <button id="downloadPDF" className="bg-purple-900 py-2 px-5 rounded-2xl hover:bg-purple-800 " >Download as PDF</button> */}
       </div>
     </div>
   </>
