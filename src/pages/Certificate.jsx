@@ -12,21 +12,41 @@ import { jsPDF } from 'jspdf';
 
 const Certificate = () => {
 
-  const [name, setName] = useState('');
-  const [certType, setCertType] = useState('');
+
+  const [ formData, setFormData ] = useState({
+    name: '',
+    certType: '',
+    startTime: '',
+    endTime: '',
+    dName: '',
+    sub: '',
+    signature: '',
+    desc: '',
+
+  })
+
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const storedName = localStorage.getItem('name');
-    if (storedName) {
-      setName(storedName);
-    }
-
     const storedCertType = localStorage.getItem('certType');
-    if (storedCertType) {
-      setCertType(storedCertType);
-    }
+    const storedStartTime = localStorage.getItem('startTime');
+    const storedEndTime = localStorage.getItem('endTime');
+    const storedDName = localStorage.getItem('dName');
+    const storedSub = localStorage.getItem('sub');
+    const storedSignature = localStorage.getItem('signature');
+    const storedDesc = localStorage.getItem('desc');
 
+    setFormData({
+      name: storedName || '',
+      certType: storedCertType || '',
+      startTime: storedStartTime || '',
+      endTime: storedEndTime || '',
+      dName: storedDName || '',
+      sub: storedSub || '',
+      signature: storedSignature || '',
+      desc: storedDesc || '',
+    });
 
 
     const downloadImageButton = document.getElementById('downloadImage');
@@ -84,6 +104,8 @@ const Certificate = () => {
   }, []);
 
   if (isMobile) {
+    
+  
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="text-center p-4 bg-white shadow-lg rounded-lg">
@@ -153,23 +175,26 @@ const Certificate = () => {
         <div className="lg:w-[800px]">
           <div className="bg-white lg:w-[850px] lg:h-[600px] lg:ml-4 lg:p-10">
             <div className="p-5 bg-purple-900 text-white text-4xl tracking-widest uppercase ">
-              CERTIFICATE OF {certType}
+              CERTIFICATE OF {formData.certType}
             </div>
 
             <div className="font-bold lg:mx-[200px] lg:mt-5 italic">
               This Certificate is Presented to:
             </div>
 
-            <div id="name" className="border-b-4 border-purple-900 pb-1 text-purple-900 mx-[70px] mt-[70px] text-5xl">
-              {name}
+            <div id="name" className=" capitalize border-b-4 border-purple-900 pb-1 text-purple-900 mx-[70px] mt-[70px] text-5xl">
+              {formData.name}
             </div>
 
-            <p className="py-4 pr-1 text-center font-medium ">
-              For Successfully Participating in the International Virtual Bio-coding Workshop on Mastering Python and R for Basic to Advance Genomics and Bioinformatics with NGS Research Applications Organized by Genomac Institute Inc.
+            <p className=" capitalize py-4 pr-1 text-center font-semibold ">
+              
+              {formData.desc}
+              
+              {/* For Successfully Participating in the International Virtual Bio-coding Workshop on Mastering Python and R for Basic to Advance Genomics and Bioinformatics with NGS Research Applications Organized by Genomac Institute Inc. */}
             </p>
 
-            <p className="font-bold mx-auto border-2 border-slate-500 lg:w-[310px] shadow-2xl shadow-slate-600">
-              4TH NOVEMBER - 6TH DECEMBER 2024
+            <p className="font-bold mx-auto border-2 border-slate-500 lg:w-[310px] shadow-2xl shadow-slate-600 uppercase ">
+              {formData.startTime} - {formData.endTime} 2025
             </p>
 
             <div className="absolute flex bottom- " >
@@ -191,12 +216,12 @@ const Certificate = () => {
 
               <div className="w-[140px] text-left  ml-20 mt-[75px] " >
                 <div className="border-b-2 border-blue-700 " >
-                  <img src={sign1} alt="signature" className="-mb-6 " />
+                  <img src={formData.signature} alt="signature" className="-mb-6 " />
                 </div>
 
                 <div>
-                  <p>Aderinto Abraham </p>
-                  <p>Director of G-iHub</p>
+                  <p className="capitalize" >{formData.dName} </p>
+                  <p className="text-[14px] " >Director of {formData.sub}</p>
                 </div>
               </div>
 
@@ -210,7 +235,7 @@ const Certificate = () => {
       </div>
 
       
-      <div className="mt-10 flex  text-white space-x-3 ">
+      <div className="mt-10  text-white space-x-3 hidden ">
         <button id="downloadImage" className="bg-purple-900 py-2 px-5 rounded-2xl hover:bg-purple-800
          ">Download as Image</button>
         {/* <button id="downloadPDF" className="bg-purple-900 py-2 px-5 rounded-2xl hover:bg-purple-800 " >Download as PDF</button> */}
