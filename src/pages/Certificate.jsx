@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import sign1 from '../assets/sign1.png';
 // import sign2 from '../assets/sign2.png';
 import award from '../assets/award.png';
@@ -11,9 +11,7 @@ import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
 
 const Certificate = () => {
-
-
-  const [ formData, setFormData ] = useState({
+  const [formData, setFormData] = useState({
     name: '',
     certType: '',
     startTime: '',
@@ -22,12 +20,14 @@ const Certificate = () => {
     sub: '',
     signature: '',
     desc: '',
-
-  })
+  });
 
   const [isMobile, setIsMobile] = useState(false);
+  const downloadImageButtonRef = useRef(null);
+  const downloadPDFButtonRef = useRef(null);
 
   useEffect(() => {
+    // Load form data from localStorage
     const storedName = localStorage.getItem('name');
     const storedCertType = localStorage.getItem('certType');
     const storedStartTime = localStorage.getItem('startTime');
@@ -48,43 +48,7 @@ const Certificate = () => {
       desc: storedDesc || '',
     });
 
-
-    const downloadImageButton = document.getElementById('downloadImage');
-    const handleDownloadImage = () => {
-      const certificateContent = document.getElementById('certificateContent');
-      if (certificateContent) {
-        html2canvas(certificateContent).then(canvas => {
-          let link = document.createElement('a');
-          link.download = 'certificate.png';
-          link.href = canvas.toDataURL();
-          link.click();
-        });
-      }
-      window.removeEventListener('resize', handleResize);
-    };
-
-    if (downloadImageButton) {
-      downloadImageButton.addEventListener('click', handleDownloadImage);
-    }
-
-    const downloadPDFButton = document.getElementById('downloadPDF');
-    const handleDownloadPDF = () => {
-      const certificateContent = document.getElementById('certificateContent');
-      if (certificateContent) {
-        html2canvas(certificateContent).then(canvas => {
-          const pdf = new jsPDF('landscape');
-          pdf.addImage(imgData, 'PNG', 10, 10, canvas.width, canvas.height);
-          const imgData = canvas.toDataURL('image/png');
-          pdf.addImage(imgData, 'PNG', 10, 10);
-          pdf.save('certificate.pdf');
-        });
-      }
-    };
-
-    if (downloadPDFButton) {
-      downloadPDFButton.addEventListener('click', handleDownloadPDF);
-    }
-
+    // Handle window resize
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1024);
     };
@@ -92,6 +56,75 @@ const Certificate = () => {
     window.addEventListener('resize', handleResize);
     handleResize();
 
+    // Cleanup event listeners
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Add event listeners for download buttons
+    const downloadImageButton = downloadImageButtonRef.current;
+    const downloadPDFButton = downloadPDFButtonRef.current;
+
+    const handleDownloadImage = () => {
+      const certificateContent = document.getElementById('certificateContent');
+      if (certificateContent) {
+        // Wait for all images to load
+        Promise.all(
+          Array.from(certificateContent.querySelectorAll('img')).map(
+            (img) =>
+              new Promise((resolve) => {
+                if (img.complete) resolve();
+                else img.onload = resolve;
+              })
+          )
+        ).then(() => {
+          html2canvas(certificateContent, { scale: 2 }).then((canvas) => {
+            const link = document.createElement('a');
+            link.download = 'certificate.png';
+            link.href = canvas.toDataURL();
+            link.click();
+          });
+        });
+      }
+    };
+
+    const handleDownloadPDF = () => {
+      const certificateContent = document.getElementById('certificateContent');
+      if (certificateContent) {
+        // Wait for all images to load
+        Promise.all(
+          Array.from(certificateContent.querySelectorAll('img')).map(
+            (img) =>
+              new Promise((resolve) => {
+                if (img.complete) resolve();
+                else img.onload = resolve;
+              })
+          )
+        ).then(() => {
+          html2canvas(certificateContent, { scale: 2 }).then((canvas) => {
+            const imgData = canvas.toDataURL('image/png');
+            const pdf = new jsPDF('landscape');
+            const imgProps = pdf.getImageProperties(imgData);
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+            pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+            pdf.save('certificate.pdf');
+          });
+        });
+      }
+    };
+
+    if (downloadImageButton) {
+      downloadImageButton.addEventListener('click', handleDownloadImage);
+    }
+
+    if (downloadPDFButton) {
+      downloadPDFButton.addEventListener('click', handleDownloadPDF);
+    }
+
+    // Cleanup event listeners
     return () => {
       if (downloadImageButton) {
         downloadImageButton.removeEventListener('click', handleDownloadImage);
@@ -100,12 +133,9 @@ const Certificate = () => {
         downloadPDFButton.removeEventListener('click', handleDownloadPDF);
       }
     };
-
   }, []);
 
   if (isMobile) {
-    
-  
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="text-center p-4 bg-white shadow-lg rounded-lg">
@@ -116,11 +146,10 @@ const Certificate = () => {
     );
   }
 
-
   return (
   <>
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <div id="certificateContent" className="flex border-2 lg:h-[650px] lg:w-[1100px] mx-auto text-center ">
+      <div id="certificateContent" className="flex border-2 lg:h-[650px] lg:w-[1100px] mx-auto text-center " style={{ width: '1100px', height: '650px' }}>
         <div className="bg-purple-900 lg:w-[210px] lg:h-[648px] ">
           <div className="flex absolute pt-2" >
             <div className="p-5 relative top-1 ml-4" >
@@ -235,10 +264,9 @@ const Certificate = () => {
       </div>
 
       
-      <div className="mt-10  text-white space-x-3 hidden ">
-        <button id="downloadImage" className="bg-purple-900 py-2 px-5 rounded-2xl hover:bg-purple-800
-         ">Download as Image</button>
-        {/* <button id="downloadPDF" className="bg-purple-900 py-2 px-5 rounded-2xl hover:bg-purple-800 " >Download as PDF</button> */}
+      <div className="mt-20  text-white">
+        <button id="downloadImage" ref={downloadImageButtonRef} className="text-white ml-20 bg-purple-900 p-2 rounded-xl hover:bg-purple-800" >Download as Image</button>
+        <button id="downloadPDF" ref={downloadPDFButtonRef} className="text-white bg-purple-900 p-2 rounded-xl hover:bg-purple-800" >Download as PDF</button>
       </div>
     </div>
   </>
