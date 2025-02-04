@@ -64,20 +64,20 @@ const Certificate1 = () => {
 
                     <div className='bg-orange-200 h-[700px] w-[270px]  ' >
 
-                        <div className='text-white text-[10px] m-2 p-2 bg-orange-300 rounded-xl text-left font-bold mt-[200px] ' >
+                        <div className='text-white text-[10px] m-2 p-2 bg-orange-300 rounded-xl text-left font-bold mt-[250px] ' >
                             
-                            <div className='bg-white text-black p-1 px-2 w-fit rounded-lg' >
+                            {/* <div className='bg-white text-black p-1 px-2 w-fit rounded-lg' >
                                 <p>
                                     This certificate is issued by G-iHub, a subsidiary of Genomac Institute Inc. a registered research institution in the United States of America.
                                 </p>
                                 <p>
                                     Registration Number : 3844801
                                 </p>
-                            </div>
+                            </div> */}
 
-                            <h4 className='text-center mt-5 text-[14px] bg-white text-black w-fit mx-auto px-2 py-1 rounded-lg ' >Office Addresses</h4>
+                            {/* <h4 className='text-center mt-5 text-[14px] bg-white text-black w-fit mx-auto px-2 py-1 rounded-lg ' >Office Address</h4> */}
 
-                            <div className='bg-white text-black w-fit p-1 px-2 rounded-lg mt-2' >
+                            {/* <div className='bg-white text-black w-fit p-1 px-2 rounded-lg mt-2' >
                                 <div className='flex py-2' >
                                     <img src={usa} alt="USA" className='w-6 mr-1 ' />
                                     <p>USA Office Address</p>
@@ -85,14 +85,18 @@ const Certificate1 = () => {
                                 <p>
                                     The corporation&apos;s registered office in the state of Delaware is located at 16192 coastal highway, lewes, Delware 19958, county of Sussex.
                                 </p>
-                            </div>
+                            </div> */}
 
-                            <div className='bg-white text-black w-fit p-1 px-2 rounded-lg mt-5' >
+                            <div className='bg-white text-black w-fit text-[14px] p-1 px-2 rounded-lg mt-5' >
                                 <div className='flex py-2' >
-                                    <img src={nig} alt="NIG" className='w-6 mr-1 ' />
-                                    <p>NIG Office Address</p>
+                                    {/* <img src={nig} alt="NIG" className='w-6 mr-1 ' /> */}
+                                    {/* <p>NIG Office Address</p> */}
                                 </div>
-                                <p>
+                                <p className='text-center font-normal' >
+                                    This certificate is issued by Genomac Innovation Hub.
+                                </p>
+                                <p className='text-center font-bold pt-10' >Address:</p>
+                                <p className='font-normal text-center' >
                                     Genomac Holdings, beside Alari Akata Filling Station, Under-G, Ogbomoso, Oyo State, Nigeria.
                                 </p>
                             </div>
