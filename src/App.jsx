@@ -2,8 +2,8 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import './App.css'
 import Home from './pages/Home';
 import Home1 from './pages/Home1';
-import Certificate from './pages/certificate';
-import Certificate1 from './pages/certificate1';
+import Certificate from './pages/Certificate';
+import Certificate1 from './pages/Certificate1';
 
 
 
