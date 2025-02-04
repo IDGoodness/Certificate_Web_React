@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { MdOutlineArrowDropDown } from "react-icons/md";
+// import { MdOutlineArrowDropDown } from "react-icons/md";
 // import Select from 'react-select';
 
 const Home = () => {
@@ -90,7 +90,7 @@ const Home = () => {
               </select>
               {/* Custom Arrow */}
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-gray-700 hover:text-purple-500 transition-colors duration-200 hover:scale-110">
-                <MdOutlineArrowDropDown className="h-6 w-6" />
+                {/* <MdOutlineArrowDropDown className="h-6 w-6" /> */}
               </div>
             </div>
 
