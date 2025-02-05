@@ -3,8 +3,6 @@ import { useEffect, useState, useCallback, useRef } from "react";
 import { toPng } from 'html-to-image';
 import sign1 from '../assets/sign1.png';
 import award from '../assets/award.png';
-import usa from '../assets/usa.png';
-import nig from '../assets/nig.png';
 import sign2 from '../assets/sign2.png';
 
 const Certificate1 = () => {

@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react"
 import sign1 from '../assets/sign1.png';
-// import sign2 from '../assets/sign2.png';
+import sign2 from '../assets/sign2.png';
 import award from '../assets/award.png';
 import genomac from '../assets/genomac.png';
 import barcode from '../assets/barcode.png';
@@ -231,9 +231,9 @@ const Certificate = () => {
                 <img src={barcode} alt="barcode" />
               </div>
 
-              <div className="w-[300px] text-left  -ml-[120px] " >
+              <div className="w-[300px] text-left  -ml-[120px] mt-[50px] " >
                 <div className="border-b-2 border-blue-700 " >
-                  <img src={sign1} alt="signature" className="-mb-16 " />
+                  <img src={sign1} alt="signature" className="-mb-16 w-[250px] " />
                 </div>
 
                 <div>
@@ -243,9 +243,9 @@ const Certificate = () => {
               </div>
 
 
-              <div className="w-[140px] text-left  ml-20 mt-[75px] " >
+              <div className="w-[140px] text-left  ml-20 mt-[130px] " >
                 <div className="border-b-2 border-blue-700 " >
-                  <img src={formData.signature} alt="signature" className="-mb-6 " />
+                  <img src={sign2} alt="signature" className="-mb-6 " />
                 </div>
 
                 <div>
