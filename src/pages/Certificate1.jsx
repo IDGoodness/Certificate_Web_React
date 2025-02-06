@@ -22,7 +22,7 @@ const Certificate1 = () => {
             link.click()
           })
           .catch(() => {
-            alert('An error occurred while generating the image. Please try again.')
+            alert('An error occurred while generating your certificate. Please try again.')
           })
       }, [ref])
 
