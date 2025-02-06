@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import logo from '../assets/gnatureslogo1.png';
+import glogo from "../assets/genomac.png"
 import sign1 from '../assets/sign1.png';
 import sign2 from '../assets/signNatures.png';
 import award from '../assets/award1.png';
@@ -63,9 +64,14 @@ const GnaturesCert = () => {
              <div className="absolute inset-0 bg-center opacity-5"
               style={{ backgroundImage: `url(${logo})` }}></div>
             <div className='flex flex-col p-5 mx-auto w-[800px] ' >
-              <p className='p-5 pl-10 mx-auto -mt-5 ' >
-                <img src={logo} alt="logo" className='w-[150px] ' />
-              </p>
+              <div className='flex justify-center -mt-5' >
+                <p className='' >
+                  <img src={glogo} alt="logo" className='w-[100px] ' />
+                </p>
+                <p className='mt-5 ' >
+                  <img src={logo} alt="logo" className='w-[150px] ' />
+                </p>
+              </div>
               <p className='text-4xl font-semibold uppercase mx-auto -mt-1 ' >
                 Certificate of Participation
               </p>
