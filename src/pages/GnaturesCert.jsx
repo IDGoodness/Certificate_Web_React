@@ -60,10 +60,12 @@ const GnaturesCert = () => {
       <div className='min-w-[1000px] flex justify-center items-center min-h-screen ' >
 
         <div ref={ref} className='flex flex-col justify-center items-center bg-white ' >
-          <div className=' relative w-[1000px] h-[600px] border-[2px] border-green-900 flex' >
-             <div className="absolute inset-0 bg-center opacity-5"
-              style={{ backgroundImage: `url(${logo})` }}></div>
-            <div className='flex flex-col p-5 mx-auto w-[800px] ' >
+          <div className=' relative w-[1000px] h-[600px] border-[1px] border-green-900 flex' >
+            <p className='w-[71px] h-[598px] ml-10 bg-green-800 ' ></p>
+            <div className="absolute inset-0 bg-center opacity-15"
+              style={{ backgroundImage: `url(${logo})` }}>
+            </div>
+            <div className='flex flex-col p-5 mx-auto w-[930px] ' >
               <div className='flex justify-center -mt-5' >
                 <p className='' >
                   <img src={glogo} alt="logo" className='w-[100px] ' />
@@ -76,19 +78,19 @@ const GnaturesCert = () => {
                 Certificate of Participation
               </p>
               <p className='text-center italic font-bold' >This is to certify that:</p>
-              <p className='text-3xl text-center mt-[40px] mx-40 font-serif ' >
+              <p className='text-3xl text-center mt-[40px] mx-40 font-serif text-green-950 ' >
                   {formData.name}
               </p>
 
-              <p className='capitalize text-[16px] mx-1 mt-5 text-center ' >
+              <p className='capitalize text-[16px] mx-14 mt-5 text-center ' >
                 {formData.desc}
               </p>
 
-              <p className='uppercase font-bold text-[20px] text-center' >
+              <p className='uppercase font-bold text-[20px] text-center text-green-950 ' >
                 {formData.date}, 2025
               </p>
 
-              <div className='flex justify-between ' >
+              <div className='flex justify-between -mt-5 ' >
                 <div className=' ' >
                   <p className='border-b-2 border-green-800 w-52 ' >
                     <img src={sign1} alt="signature" className='w-[200px] h-[150px] -mb-10 ' />
@@ -103,7 +105,7 @@ const GnaturesCert = () => {
 
                 <div className=' ' >
                   <p className='border-b-2 border-green-800 w-52 ' >
-                    <img src={sign2} alt="signature" className='w-[200px] h-[150px] -mb-10 ' />
+                    <img src={sign2} alt="signature" className='w-[200px] h-[150px] -mb-12 ' />
                   </p>
                   <p className='text-lg font-semibold' >
                     Oluwaseyi Praise Ayomide
@@ -115,9 +117,7 @@ const GnaturesCert = () => {
 
               </div>
 
-              <div className='bg-green-400 w-[1000px] -ml-[220px] h-[600px] p-[65px] hidden ' >
-                
-              </div>
+              <div className='bg-green-800 w-[1000px] h-[30px] -ml-[89px] mt-[30px] ' ></div>
 
             </div>
 
