@@ -92,7 +92,7 @@ const GnaturesCert = () => {
                 {formData.date}, 2025
               </p>
 
-              <div className='flex justify-center space-x-[250px] -mt-5 ' >
+              <div className='flex justify-around -mt-12 ' >
                 <div className=' ' >
                   <p className='border-b-2 border-green-800 w-52 ' >
                     <img src={sign1} alt="signature" className='w-[200px] h-[150px] -mb-10 ' />
@@ -103,6 +103,10 @@ const GnaturesCert = () => {
                   <p className='text-sm font-medium' >
                     Founder & CEO of Genomac Institute INC.
                   </p>
+                </div>
+
+                <div className='w-[100px] mt-14 -ml-10 ' >
+                  <img src={award} alt="alt" />
                 </div>
 
                 <div className='mt-2 ' >
@@ -119,15 +123,10 @@ const GnaturesCert = () => {
 
               </div>
 
-              <div className='bg-green-800 w-[1000px] h-[30px] -ml-[89px] mt-[30px] ' ></div>
+              <div className='bg-green-800 w-[1000px] h-[30px] -ml-[89px] mt-[20px] ' ></div>
 
             </div>
 
-            <div className='absolute' >
-              <p className='relative left-[800px] top-5 ' >
-                <img src={award} alt="alt" className='w-[150px] ' />
-              </p>
-            </div>
           </div>
         </div>
       </div>
