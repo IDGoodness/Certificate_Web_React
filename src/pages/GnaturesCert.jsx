@@ -62,9 +62,11 @@ const GnaturesCert = () => {
         <div ref={ref} className='flex flex-col justify-center items-center bg-white ' >
           <div className=' relative w-[1000px] h-[600px] border-[1px] border-green-900 flex' >
             <p className='w-[71px] h-[598px] ml-10 bg-green-800 ' ></p>
+
             <div className="absolute inset-0 bg-center opacity-15"
               style={{ backgroundImage: `url(${logo})` }}>
             </div>
+
             <div className='flex flex-col p-5 mx-auto w-[930px] ' >
               <div className='flex justify-center -mt-5' >
                 <p className='' >
@@ -90,7 +92,7 @@ const GnaturesCert = () => {
                 {formData.date}, 2025
               </p>
 
-              <div className='flex justify-between -mt-5 ' >
+              <div className='flex justify-center space-x-[250px] -mt-5 ' >
                 <div className=' ' >
                   <p className='border-b-2 border-green-800 w-52 ' >
                     <img src={sign1} alt="signature" className='w-[200px] h-[150px] -mb-10 ' />
@@ -103,7 +105,7 @@ const GnaturesCert = () => {
                   </p>
                 </div>
 
-                <div className=' ' >
+                <div className='mt-2 ' >
                   <p className='border-b-2 border-green-800 w-52 ' >
                     <img src={sign2} alt="signature" className='w-[200px] h-[150px] -mb-12 ' />
                   </p>
