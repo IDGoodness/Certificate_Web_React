@@ -34,10 +34,10 @@ const GnaturesHome = () => {
 
           <div className='' >
             <div className="py-2 mr-1 ">
-              <input type="text" id="name" value={formData.name} onChange={handleChange} name="name" placeholder="Name" required className="w-full rounded-xl p-3 pl-5 outline outline-1 hover:outline-purple-800" />
+              <input type="text" id="name" value={formData.name} onChange={handleChange} name="name" placeholder="Name" required className="w-full rounded-xl p-3 pl-5 outline outline-1 hover:outline-green-800" />
             </div>
             <div className="py-2 mr-1 ">
-              <input type="text" id="date" value={formData.date} onChange={handleChange} name="date" placeholder="'14th February'" required className="w-full rounded-xl p-3 pl-5 outline outline-1 hover:outline-purple-800" />
+              <input type="text" id="date" value={formData.date} onChange={handleChange} name="date" placeholder="'14th February'" required className="w-full rounded-xl p-3 pl-5 outline outline-1 hover:outline-green-800" />
             </div>
             <div className="py-2 mr-1 ">
               <textarea type="text" id="desc" value={formData.desc} onChange={handleChange} name="desc" placeholder="Description" required className="w-full h-[150px] rounded-xl p-3 pl-5 outline outline-1 hover:outline-purple-800" />

@@ -67,7 +67,7 @@ const Ginsti = () => {
                             <p className='text-center italic font-bold ' >this is to certify that:</p>
                         </div>
 
-                        <div className=' text-center mx-auto pt-10 pb-10 bg-purple-900 text-white mt-5 ' >
+                        <div className=' text-center mx-auto pt-10 pb-10 bg-purple-950 text-white opacity-70 mt-5 ' >
                             <p className='text-3xl font-bold  ' > {formData.name} </p>
                             <p className='mx-28 pt-3' > {formData.desc} </p>
                             <p className='font-bold uppercase' > {formData.date}, 2025</p>
@@ -95,7 +95,7 @@ const Ginsti = () => {
                                     <img src={sign2} alt="signature" className='w-[200px] h-[150px] -mb-12 ' />
                                 </p>
                                 <p className='text-base font-semibold' >
-                                    Oluwaseun Oyekunle Agoola
+                                    Oluwaseun Oyekunle Agboola
                                 </p>
                                 <p className='text-xs font-medium' >
                                     Director, Genomac Institute INC.

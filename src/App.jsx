@@ -7,6 +7,7 @@ import Certificate1 from './pages/Certificate1';
 import GnaturesHome from './pages/GnaturesHome';
 import GnaturesCert from './pages/GnaturesCert';
 import Ginsti from './pages/Ginsti';
+import GinstiHome from './pages/GinstiHome';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/gnatureshome" element={<GnaturesHome/>} />
         <Route path="/gnaturescert" element={<GnaturesCert/>} />
         <Route path="/ginsti" element={<Ginsti/>} />
+        <Route path="/ginstihome" element={<GinstiHome/>} />
       </Routes>
     </BrowserRouter>
   )
