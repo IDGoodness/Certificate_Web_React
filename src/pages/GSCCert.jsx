@@ -55,7 +55,7 @@ const GSCCert = () => {
         <div className='min-w-[1000px] flex justify-center items-center min-h-screen ' >
             <div ref={ref} className='flex flex-col justify-center items-center bg-white ' >
                 <div className='relative w-[1000px] h-[600px] border border-purple-500 flex ' >
-                    <div className='absolute inset-0 bg bg-center opacity-5' style={{ backgroundImage: `url(${logo})` }} ></div>
+                    <div className='absolute inset-0 bg bg-center opacity-15' style={{ backgroundImage: `url(${logo})` }} ></div>
 
                     <div className='flex flex-col mx-auto' >
                         <div className='flex text-center justify-between ' >
@@ -64,8 +64,8 @@ const GSCCert = () => {
                         </div>
 
                         <div className='text-center mx-auto -mt-[70px]  ' >
-                            <p className='uppercase font-semibold text-4xl ' >certificate of participation</p>
-                            <p className='text-center italic font-bold ' >this is to certify that:</p>
+                            <p className='uppercase font-semibold text-4xl  ' >certificate of participation</p>
+                            <p className='text-center italic font-bold pt-2 ' >this is to certify that:</p>
                         </div>
 
                         <div className=' text-center mx-auto pt-10 pb-10 text-black w-[1000px] h-[200px] mt-10 bg-purple-800 ' >
@@ -93,7 +93,7 @@ const GSCCert = () => {
                                 <img src={award} alt="award" />
                             </div>
 
-                            <div className='mt-2 ' >
+                            <div className=' ' >
                                 <p className='border-b-2 border-purple-800 w-52 ' >
                                     <img src={sign2} alt="signature" className='w-[200px] h-[150px] -mb-12 ' />
                                 </p>

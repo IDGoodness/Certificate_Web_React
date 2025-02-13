@@ -3,7 +3,8 @@ import logo from '../assets/ginsti.png';
 import glogo from '../assets/genomac.png';
 import sign1 from '../assets/sign1.png';
 import sign2 from '../assets/signInsti.png';
-import award from '../assets/purpleribbon.png';
+import award from '../assets/award.png';
+import award1 from '../assets/purpleribbon.png';
 import { toPng } from 'html-to-image';
 
 
@@ -53,7 +54,7 @@ const Ginsti = () => {
         <div className='min-w-[1000px] flex justify-center items-center min-h-screen ' >
             <div ref={ref} className='flex flex-col justify-center items-center bg-white ' >
                 <div className='relative w-[1000px] h-[600px] border border-purple-500 flex ' >
-                    <div className='absolute inset-0 bg bg-center opacity-5' style={{ backgroundImage: `url(${logo})` }} ></div>
+                    <div className='absolute inset-0 bg bg-center opacity-15' style={{ backgroundImage: `url(${logo})` }} ></div>
 
                     <div className='flex flex-col mx-auto' >
                         <div className='flex text-center mx-auto' >
@@ -67,13 +68,13 @@ const Ginsti = () => {
                             <p className='text-center italic font-bold ' >this is to certify that:</p>
                         </div>
 
-                        <div className=' text-center mx-auto pt-10 pb-10 bg-purple-950 text-white w-[1000px] h-[200px] mt-5 ' >
+                        <div className=' text-center mx-auto pt-10 pb-10 w-[1000px] h-[200px] mt-5 ' >
                             <p className='text-3xl font-bold  ' > {formData.name} </p>
                             <p className='mx-28 pt-3' > {formData.desc} </p>
                             <p className='font-bold uppercase' > {formData.date}, 2025</p>
                         </div>
 
-                        <div className='flex justify-around mx-20 -mt-12 ' >
+                        <div className='flex justify-between mx-32 -mt-12 ' >
                             <div className=' ' >
                                 <p className='border-b-2 border-purple-800 w-[200px] ' >
                                     <img src={sign1} alt="signature" className='w-[200px] h-[150px] -mb-10 ' />
@@ -86,7 +87,7 @@ const Ginsti = () => {
                                 </p>
                             </div>
 
-                            <div className='w-[170px] mt-10 -ml-10 ' >
+                            <div className='w-[400px] h-auto -mt-[30px] -ml-[400px] -mr-[320px] z-10' >
                                 <img src={award} alt="award" />
                             </div>
 
@@ -101,6 +102,10 @@ const Ginsti = () => {
                                     Director, Genomac Institute INC.
                                 </p>
                             </div>
+                        </div>
+
+                        <div className='w-[150px] absolute top-8 left-14 ' >
+                            <img src={award1} alt="award" />
                         </div>
 
                     </div>
