@@ -1,19 +1,19 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
-import logo from '../assets/ginsti.png';
+import { useCallback, useEffect, useRef, useState } from 'react'
 import glogo from '../assets/genomac.png';
+import logo from '../assets/gsclogo.png';
+import award from '../assets/ribbon3.png';
 import sign1 from '../assets/sign1.png';
 import sign2 from '../assets/signInsti.png';
-import award from '../assets/purpleribbon.png';
 import { toPng } from 'html-to-image';
+import ribbon from '../assets/ribbon2.png';
 
-
-const Ginsti = () => {
+const GSCCert = () => {
 
     const ref = useRef(null);
 
     const onButtonClick = useCallback(() => {
-        if (ref.current === null ) {
-        return
+        if (ref.current === null){
+            return
         }
 
         toPng(ref.current, { cacheBust: true, })
@@ -27,7 +27,6 @@ const Ginsti = () => {
             alert("An error occurred while generating your certificate. Please try again.")
         })
     }, [ref])
-
 
     const [ formData, setFormData ] = useState({
         name: '',
@@ -47,30 +46,34 @@ const Ginsti = () => {
         })
     }, [])
 
+
+
+
+
   return (
     <>
-    
         <div className='min-w-[1000px] flex justify-center items-center min-h-screen ' >
             <div ref={ref} className='flex flex-col justify-center items-center bg-white ' >
                 <div className='relative w-[1000px] h-[600px] border border-purple-500 flex ' >
                     <div className='absolute inset-0 bg bg-center opacity-5' style={{ backgroundImage: `url(${logo})` }} ></div>
 
                     <div className='flex flex-col mx-auto' >
-                        <div className='flex text-center mx-auto' >
-                            <p className='mr-2' ><img src={glogo} alt="logo" className='w-[80px] ' /></p>
-                            <p className='w-[1px] h-[50px] bg-purple-600 mt-4 ' ></p>
-                            <p className='ml-4 w-[80px] ' ><img src={logo} alt="logo" className=' ' /></p>                            
+                        <div className='flex text-center justify-between ' >
+                            <p className='ml-10 mt-3 w-[100px] ' ><img src={glogo} alt="logo" className=' ' /></p>
+                            <p className='mr-10 mt-3 w-[100px] ' ><img src={logo} alt="logo" className=' ' /></p>                            
                         </div>
 
-                        <div className='text-center mx-auto' >
+                        <div className='text-center mx-auto -mt-[70px]  ' >
                             <p className='uppercase font-semibold text-4xl ' >certificate of participation</p>
                             <p className='text-center italic font-bold ' >this is to certify that:</p>
                         </div>
 
-                        <div className=' text-center mx-auto pt-10 pb-10 bg-purple-950 text-white w-[1000px] h-[200px] mt-5 ' >
-                            <p className='text-3xl font-bold  ' > {formData.name} </p>
-                            <p className='mx-28 pt-3' > {formData.desc} </p>
-                            <p className='font-bold uppercase' > {formData.date}, 2025</p>
+                        <div className=' text-center mx-auto pt-10 pb-10 text-black w-[1000px] h-[200px] mt-10 bg-purple-800 ' >
+                            <div className='bg-white w-[800px] -mt-[40px] h-[200px] mx-auto ' >
+                                <p className='text-3xl font-bold pt-10 ' > {formData.name} </p>
+                                <p className='mx-auto pt-3 px-10 ' > {formData.desc} </p>
+                                <p className='font-bold uppercase ' > {formData.date}, 2025</p>
+                            </div>
                         </div>
 
                         <div className='flex justify-around mx-20 -mt-12 ' >
@@ -86,7 +89,7 @@ const Ginsti = () => {
                                 </p>
                             </div>
 
-                            <div className='w-[170px] mt-10 -ml-10 ' >
+                            <div className='w-[170px] mt-5 -ml-10 ' >
                                 <img src={award} alt="award" />
                             </div>
 
@@ -95,12 +98,16 @@ const Ginsti = () => {
                                     <img src={sign2} alt="signature" className='w-[200px] h-[150px] -mb-12 ' />
                                 </p>
                                 <p className='text-base font-semibold' >
-                                    Oluwaseun Oyekunle Agboola
+                                    Stephen Akanbi
                                 </p>
                                 <p className='text-xs font-medium' >
-                                    Director, Genomac Institute INC.
+                                    Director, Genomac Services and Consults.
                                 </p>
                             </div>
+                        </div>
+
+                        <div className='mx-auto -mt-5 ' >
+                            <img src={ribbon} alt="ribbon" className='w-[700px] h-[100px]' />
                         </div>
 
                     </div>
@@ -124,4 +131,4 @@ const Ginsti = () => {
   )
 }
 
-export default Ginsti
+export default GSCCert

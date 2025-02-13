@@ -8,6 +8,9 @@ import GnaturesHome from './pages/GnaturesHome';
 import GnaturesCert from './pages/GnaturesCert';
 import Ginsti from './pages/Ginsti';
 import GinstiHome from './pages/GinstiHome';
+import GSCHome from './pages/GSCHome';
+import GSCCert from './pages/GSCCert';
+
 
 
 
@@ -25,6 +28,8 @@ function App() {
         <Route path="/gnaturescert" element={<GnaturesCert/>} />
         <Route path="/ginsti" element={<Ginsti/>} />
         <Route path="/ginstihome" element={<GinstiHome/>} />
+        <Route path="/gschome" element={<GSCHome/>} />
+        <Route path="/gsccert" element={<GSCCert/>} />
       </Routes>
     </BrowserRouter>
   )
