@@ -54,7 +54,7 @@ const Ginsti = () => {
         <div className='min-w-[1000px] flex justify-center items-center min-h-screen ' >
             <div ref={ref} className='flex flex-col justify-center items-center bg-white ' >
                 <div className='relative w-[1000px] h-[600px] border border-purple-500 flex ' >
-                    <div className='absolute inset-0 bg bg-center opacity-15' style={{ backgroundImage: `url(${logo})` }} ></div>
+                    {/* <div className='absolute inset-0 bg bg-center opacity-15' style={{ backgroundImage: `url(${logo})` }} ></div> */}
 
                     <div className='flex flex-col mx-auto' >
                         <div className='flex text-center mx-auto' >
@@ -83,7 +83,7 @@ const Ginsti = () => {
                                     Oluwaseyi Abraham Olawale
                                 </p>
                                 <p className='text-xs font-medium' >
-                                    Founder & CEO of Genomac Institute INC.
+                                    Founder & CEO of Genomac Holdings.
                                 </p>
                             </div>
 
