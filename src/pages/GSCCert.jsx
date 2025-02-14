@@ -3,7 +3,7 @@ import glogo from '../assets/genomac.png';
 import logo from '../assets/gsclogo.png';
 import award from '../assets/ribbon3.png';
 import sign1 from '../assets/sign1.png';
-import sign2 from '../assets/signInsti.png';
+import sign2 from '../assets/gscsignature.png';
 import { toPng } from 'html-to-image';
 import ribbon from '../assets/ribbon2.png';
 
@@ -55,7 +55,7 @@ const GSCCert = () => {
         <div className='min-w-[1000px] flex justify-center items-center min-h-screen ' >
             <div ref={ref} className='flex flex-col justify-center items-center bg-white ' >
                 <div className='relative w-[1000px] h-[600px] border border-purple-500 flex ' >
-                    <div className='absolute inset-0 bg bg-center opacity-15' style={{ backgroundImage: `url(${logo})` }} ></div>
+                    <div className='absolute inset-0 bg bg-center opacity-20' style={{ backgroundImage: `url(${logo})` }} ></div>
 
                     <div className='flex flex-col mx-auto' >
                         <div className='flex text-center justify-between ' >
@@ -76,7 +76,7 @@ const GSCCert = () => {
                             </div>
                         </div>
 
-                        <div className='flex justify-around mx-20 -mt-12 ' >
+                        <div className='flex justify-around mx-20 -mt-5 ' >
                             <div className=' ' >
                                 <p className='border-b-2 border-purple-800 w-[200px] ' >
                                     <img src={sign1} alt="signature" className='w-[200px] h-[150px] -mb-10 ' />
@@ -106,7 +106,7 @@ const GSCCert = () => {
                             </div>
                         </div>
 
-                        <div className='mx-auto -mt-5 ' >
+                        <div className='mx-auto -mt-10 ' >
                             <img src={ribbon} alt="ribbon" className='w-[700px] h-[100px]' />
                         </div>
 
