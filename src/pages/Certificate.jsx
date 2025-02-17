@@ -135,7 +135,7 @@ const Certificate = () => {
                   {formData.name}
                 </div>
 
-                <p className=" capitalize py-4 pr-1 text-center font-semibold ">
+                <p className=" capitalize py-4 pr-1 text-center font-base ">
                   For Successfully Participating in the International Research Schorlarship Program on <span className="font-bold" > {formData.course} </span> Organized by Genomac Institute Inc.
                 </p>
 
