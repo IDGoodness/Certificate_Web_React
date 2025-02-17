@@ -46,7 +46,7 @@ const Home = () => {
                 <option value="Virulence Genomics">Virulence Genomics</option>
                 <option value="Infectious Disease">Infectious Disease</option>
                 <option value="Nutri Genomics">Nutri Genomics</option>
-                <option value="Anti Bacteria R&D">Anti BActeria R&D</option>
+                <option value="Anti Bacteria R&D">Anti Bacteria R&D</option>
                 <option value="Anti Cancer R&D">Anti Cancer R&D</option>
               </select>
             </div>
