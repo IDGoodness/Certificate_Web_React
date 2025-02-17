@@ -15,22 +15,22 @@ import { toPng } from "html-to-image";
 const Certificate = () => {
   const [formData, setFormData] = useState({
     name: "",
-    startTime: "",
-    endTime: "",
+    startMonth: "",
+    endMonth: "",
     course: ""
   });
 
   useEffect(() => {
     // Load form data from localStorage
     const storedName = localStorage.getItem("name");
-    const storedStartTime = localStorage.getItem("startTime");
-    const storedEndTime = localStorage.getItem("endTime");
+    const storedStartMonth = localStorage.getItem("startMonth");
+    const storedEndMonth = localStorage.getItem("endMonth");
     const storedCourse = localStorage.getItem("course");
 
     setFormData({
       name: storedName || "",
-      startTime: storedStartTime || "",
-      endTime: storedEndTime || "",
+      startMonth: storedStartMonth || "",
+      endMonth: storedEndMonth || "",
       course: storedCourse || ""
     });
   }, []);
@@ -66,7 +66,7 @@ const Certificate = () => {
           className="flex flex-col justify-center items-center bg-white "
         >
           <div className="relative w-[1000px] h-[600px] border flex ">
-            <div className="bg-purple-900 w-[200px] h-[600px] ">
+            <div className="bg-gradient-to-b from-pink-400 via-purple-900 to-purple-900 w-[200px] h-[600px] ">
               <div className="flex ">
                 <div className="mx-auto">
                   <img src={logo} alt="logo2" className="w-28" />
@@ -124,7 +124,7 @@ const Certificate = () => {
                   CERTIFICATE OF EXcellence
                 </div>
 
-                <div className="font-bold text-center mt-5 italic">
+                <div className="font-base text-center mt-5 italic">
                   This Certificate is Presented to:
                 </div>
 
@@ -136,12 +136,11 @@ const Certificate = () => {
                 </div>
 
                 <p className=" capitalize py-4 pr-1 text-center font-semibold ">
-                  For Successfully Participating in the International Research Schorlarship Program on;
-                  {formData.course} Basic to Advance Genomics and Bioinformatics with NGS Research Applications Organized by Genomac Institute Inc.
+                  For Successfully Participating in the International Research Schorlarship Program on <span className="font-bold" > {formData.course} </span> Organized by Genomac Institute Inc.
                 </p>
 
                 <p className="font-bold mx-auto text-center w-[300px] uppercase ">
-                  {formData.startTime} - {formData.endTime} 2025
+                  {formData.startMonth} - {formData.endMonth} 2025
                 </p>
 
                 <div className="flex justify-between -mt-7 ">

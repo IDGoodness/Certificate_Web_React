@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom';
 const Home = () => {
   const [formData, setFormData] = useState({
     name: '',
-    startTime: '',
-    endTime: '',
+    startMonth: '',
+    endMonth: '',
     course: '',
   });
 
@@ -39,21 +39,24 @@ const Home = () => {
             </div>
             
             <div className="py-2 ml-1 relative">
-              <select name="sub" id="sub" value={formData.course} onChange={handleChange} placeholder="Course" className='w-full h-10 rounded-xl pl-3 outline outline-1 appearance-none hover:outline-purple-800 transition-colors duration-200 ' >
+              <select name="course" id="course" value={formData.course} onChange={handleChange} placeholder="Course" className='w-full h-10 rounded-xl pl-3 outline outline-1 appearance-none hover:outline-purple-800 transition-colors duration-200 ' >
                 <option value="" disabled>Course</option>
-                <option value="Gi-Hub" className=' appearance-none hover:bg-' >Gi-Hub</option>
-                <option value="Gi-Hub">Gi-Hub</option>
-                <option value="G-Natures">G-Natures</option>
-                <option value="Gi-Hub">Gi-Hub</option>
+                <option value="Cancer Genomic" className=' appearance-none hover:bg-' >Cancer Genomics</option>
+                <option value="Plant Genomics">Plant Genomics</option>
+                <option value="Virulence Genomics">Virulence Genomics</option>
+                <option value="Infectious Disease">Infectious Disease</option>
+                <option value="Nutri Genomics">Nutri Genomics</option>
+                <option value="Anti Bacteria R&D">Anti BActeria R&D</option>
+                <option value="Anti Cancer R&D">Anti Cancer R&D</option>
               </select>
             </div>
 
             <div className="py-2 mr-1">
-              <input type="text" id="startTime" value={formData.startTime} onChange={handleChange} name="startTime" placeholder="Start Month" required className="w-full rounded-xl p-2 pl-3 outline outline-1 hover:outline-purple-800" />
+              <input type="text" id="startMonth" value={formData.startTime} onChange={handleChange} name="startMonth" placeholder="Start Month" required className="w-full rounded-xl p-2 pl-3 outline outline-1 hover:outline-purple-800" />
             </div>
 
             <div className="py-2 ml-1">
-              <input type="text" id="endTime" value={formData.endTime} onChange={handleChange} name="endTime" placeholder="End Month" required className="w-full rounded-xl p-2 pl-3 outline outline-1 hover:outline-purple-800" />
+              <input type="text" id="endMonth" value={formData.endTime} onChange={handleChange} name="endMonth" placeholder="End Month" required className="w-full rounded-xl p-2 pl-3 outline outline-1 hover:outline-purple-800" />
             </div>
 
           </div>

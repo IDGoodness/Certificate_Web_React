@@ -147,7 +147,7 @@ const Certificate1 = () => {
                                     <img src={sign1} alt="signature" className='w-[200px] h-[150px] -mb-10'/>
                                 </div>
                                 <p className='font-semibold text-lg' >Oluwaseyi Abraham Olawale</p>
-                                <p className='font-medium text-sm' >Founder & CEO of Genomac Institute INC.</p>
+                                <p className='font-medium text-sm' >Founder & CEO of Genomac Holdings.</p>
                             </div>
 
                             <div className='-mt-[70px] -ml-[300px] ' >

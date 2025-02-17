@@ -85,7 +85,7 @@ const GSCCert = () => {
                                     Oluwaseyi Abraham Olawale
                                 </p>
                                 <p className='text-xs font-medium' >
-                                    Founder & CEO of Genomac Institute INC.
+                                    Founder & CEO of Genomac Holdings.
                                 </p>
                             </div>
 

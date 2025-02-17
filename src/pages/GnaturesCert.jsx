@@ -101,7 +101,7 @@ const GnaturesCert = () => {
                     Oluwaseyi Abraham Olawale
                   </p>
                   <p className='text-sm font-medium' >
-                    Founder & CEO of Genomac Institute INC.
+                    Founder & CEO of Genomac Holdings.
                   </p>
                 </div>
 
