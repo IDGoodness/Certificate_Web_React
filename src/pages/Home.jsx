@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom';
 const Home = () => {
   const [formData, setFormData] = useState({
     name: '',
-    startMonth: '',
-    endMonth: '',
+    // startMonth: '',
+    // endMonth: '',
     course: '',
   });
 
@@ -51,13 +51,13 @@ const Home = () => {
               </select>
             </div>
 
-            <div className="py-2 mr-1">
+            {/* <div className="py-2 mr-1">
               <input type="text" id="startMonth" value={formData.startTime} onChange={handleChange} name="startMonth" placeholder="Start Month" required className="w-full rounded-xl p-2 pl-3 outline outline-1 hover:outline-purple-800" />
             </div>
 
             <div className="py-2 ml-1">
               <input type="text" id="endMonth" value={formData.endTime} onChange={handleChange} name="endMonth" placeholder="End Month" required className="w-full rounded-xl p-2 pl-3 outline outline-1 hover:outline-purple-800" />
-            </div>
+            </div> */}
 
           </div>
           <button type="submit" className="bg-purple-950 text-white p-3 my-5 rounded-full w-full hover:bg-purple-900">Generate Certificate</button>

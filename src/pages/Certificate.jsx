@@ -15,22 +15,22 @@ import { toPng } from "html-to-image";
 const Certificate = () => {
   const [formData, setFormData] = useState({
     name: "",
-    startMonth: "",
-    endMonth: "",
+    // startMonth: "",
+    // endMonth: "",
     course: ""
   });
 
   useEffect(() => {
     // Load form data from localStorage
     const storedName = localStorage.getItem("name");
-    const storedStartMonth = localStorage.getItem("startMonth");
-    const storedEndMonth = localStorage.getItem("endMonth");
+    // const storedStartMonth = localStorage.getItem("startMonth");
+    // const storedEndMonth = localStorage.getItem("endMonth");
     const storedCourse = localStorage.getItem("course");
 
     setFormData({
       name: storedName || "",
-      startMonth: storedStartMonth || "",
-      endMonth: storedEndMonth || "",
+      // startMonth: storedStartMonth || "",
+      // endMonth: storedEndMonth || "",
       course: storedCourse || ""
     });
   }, []);
@@ -140,7 +140,7 @@ const Certificate = () => {
                 </p>
 
                 <p className="font-bold mx-auto text-center w-[300px] uppercase ">
-                  {formData.startMonth} - {formData.endMonth} 2025
+                  november - february 2025
                 </p>
 
                 <div className="flex justify-between -mt-7 ">
