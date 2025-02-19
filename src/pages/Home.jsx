@@ -41,7 +41,7 @@ const Home = () => {
             <div className="py-2 ml-1 relative">
               <select name="course" id="course" value={formData.course} onChange={handleChange} placeholder="Course" className='w-full h-10 rounded-xl pl-3 outline outline-1 appearance-none hover:outline-purple-800 transition-colors duration-200 ' >
                 <option value="" disabled>Course</option>
-                <option value="Cancer Genomic" className=' appearance-none hover:bg-' >Cancer Genomics</option>
+                <option value="Cancer Genomics" className=' appearance-none hover:bg-' >Cancer Genomics</option>
                 <option value="Plant Genomics">Plant Genomics</option>
                 <option value="Virulence Genomics">Virulence Genomics</option>
                 <option value="Infectious Disease">Infectious Disease</option>
