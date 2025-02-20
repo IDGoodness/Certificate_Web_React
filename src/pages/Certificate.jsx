@@ -136,7 +136,7 @@ const Certificate = () => {
                 </div>
 
                 <p className=" capitalize py-4 pr-1 text-center font-base ">
-                  For Successfully Participating in the International Research Internship Program on <span className="font-bold" > {formData.course} </span> Organized by Genomac Institute Inc.
+                  For Successfully Participating in the International Research Internship Program on the application of Genomics and Bioinformatics Techniques in <span className="font-bold" > {formData.course} </span> Organized by Genomac Institute Inc.
                 </p>
 
                 <p className="font-bold mx-auto text-center w-[300px] uppercase ">
