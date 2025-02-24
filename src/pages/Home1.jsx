@@ -25,7 +25,7 @@ const Home1 = () => {
 
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen">
       <div className="w-full max-w-lg lg:w-fit lg:h-auto bg-white p-6 shadow-2xl rounded-xl">
         <h1 className="text-center text-3xl text-white p-5 rounded-t-xl bg-orange-600">Certificate Generator</h1>
         <form id="certificateForm" className="p-5" onSubmit={handleSubmit}>

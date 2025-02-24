@@ -56,40 +56,16 @@ const Certificate1 = () => {
   return (
     <>
     
-        <div className='min-w-[1200px] flex justify-center items-center min-h-screen' >
-            <div ref={ref} className="flex flex-col justify-center items-center" >
-                <div className="bg-white border border-1 w-[1200px] h-[700px] flex" >
+        <div className='min-w-[1000px] flex justify-center items-center min-h-screen' >
+            <div ref={ref} className="flex flex-col justify-center items-center bg-white" >
+                <div className="bg-white border border-1 w-[1000px] h-[600px] flex" >
 
-                    <div className='bg-orange-200 h-[700px] w-[270px]  ' >
+                    <div className='bg-orange-200 h-[600px] w-[200px]  ' >
 
-                        <div className='text-white text-[10px] m-2 p-2 bg-orange-300 rounded-xl text-left font-bold mt-[250px] ' >
-                            
-                            {/* <div className='bg-white text-black p-1 px-2 w-fit rounded-lg' >
-                                <p>
-                                    This certificate is issued by G-iHub, a subsidiary of Genomac Institute Inc. a registered research institution in the United States of America.
-                                </p>
-                                <p>
-                                    Registration Number : 3844801
-                                </p>
-                            </div> */}
+                        {/* <div className='text-white text-[10px] m-2 p-2 bg-orange-300 rounded-xl text-left font-bold mt-[250px] ' >
 
-                            {/* <h4 className='text-center mt-5 text-[14px] bg-white text-black w-fit mx-auto px-2 py-1 rounded-lg ' >Office Address</h4> */}
-
-                            {/* <div className='bg-white text-black w-fit p-1 px-2 rounded-lg mt-2' >
-                                <div className='flex py-2' >
-                                    <img src={usa} alt="USA" className='w-6 mr-1 ' />
-                                    <p>USA Office Address</p>
-                                </div>
-                                <p>
-                                    The corporation&apos;s registered office in the state of Delaware is located at 16192 coastal highway, lewes, Delware 19958, county of Sussex.
-                                </p>
-                            </div> */}
 
                             <div className='bg-white text-black w-fit text-[14px] p-1 px-2 rounded-lg mt-5' >
-                                <div className='flex py-2' >
-                                    {/* <img src={nig} alt="NIG" className='w-6 mr-1 ' /> */}
-                                    {/* <p>NIG Office Address</p> */}
-                                </div>
                                 <p className='text-center font-normal' >
                                     This certificate is issued by Genomac Innovation Hub.
                                 </p>
@@ -99,16 +75,16 @@ const Certificate1 = () => {
                                 </p>
                             </div>
 
-                        </div>
+                        </div> */}
                                         
                     </div>
 
-                    <div className='w-[920px] ' >
-                        <div className='flex justify-center -mt-10 ' >
-                            <img src={gihub} alt="logo" className='w-[250px] h-[250px] ' />
+                    <div className='w-[800px] ' >
+                        <div className='flex justify-center -mt-7 ' >
+                            <img src={gihub} alt="logo" className='w-[150px] h-[150px] ' />
                         </div>
 
-                        <div className='text-center text-5xl uppercase -mt-16 ' >
+                        <div className='text-center text-5xl uppercase -mt-10 ' >
                             Certificate of Learning
 
                         </div>
@@ -141,7 +117,7 @@ const Certificate1 = () => {
 
                         </div>
 
-                        <div className='flex justify-between mx-10 -mt-10 ' >
+                        <div className='flex justify-around mx-10 -mt-20 ' >
                             <div className='w-[400px] ' >
                                 <div className='border-b-2 border-orange-600 w-52' >
                                     <img src={sign1} alt="signature" className='w-[200px] h-[150px] -mb-10'/>
@@ -150,8 +126,8 @@ const Certificate1 = () => {
                                 <p className='font-medium text-sm' >Founder & CEO of Genomac Holdings.</p>
                             </div>
 
-                            <div className='-mt-[70px] -ml-[300px] ' >
-                                <img src={award} alt="award" className='w-[500px] ' />
+                            <div className='-mt-[40px] -ml-[300px] ' >
+                                <img src={award} alt="award" className='w-[400px] ' />
                             </div>
 
                             <div className='mt-[33px] ' >
