@@ -4,8 +4,6 @@ import { useNavigate } from 'react-router-dom';
 const GinstiHome = () => {
   const [formData, setFormData] = useState({
     name: "",
-    desc: "",
-    date: "",
   });
 
   const navigate = useNavigate();
@@ -41,30 +39,6 @@ const GinstiHome = () => {
                 placeholder="Name"
                 required
                 className="w-full rounded-xl p-3 pl-5 outline outline-1 hover:outline-purple-800"
-              />
-            </div>
-            <div className="py-2 mr-1 ">
-              <input
-                type="text"
-                id="date"
-                value={formData.date}
-                onChange={handleChange}
-                name="date"
-                placeholder="'14th February'"
-                required
-                className="w-full rounded-xl p-3 pl-5 outline outline-1 hover:outline-purple-800"
-              />
-            </div>
-            <div className="py-2 mr-1 ">
-              <textarea
-                type="text"
-                id="desc"
-                value={formData.desc}
-                onChange={handleChange}
-                name="desc"
-                placeholder="Description"
-                required
-                className="w-full h-[150px] rounded-xl p-3 pl-5 outline outline-1 hover:outline-purple-800"
               />
             </div>
           </div>

@@ -58,103 +58,99 @@ const Certificate1 = () => {
       <div className="min-w-[1000px] flex justify-center items-center min-h-screen">
         <div
           ref={ref}
-          className="flex flex-col justify-center items-center bg-white"
+          className="flex flex-col justify-center items-center bg-white relative"
         >
           <div className="bg-white border border-1 w-[1000px] h-[600px] flex">
-            <div className="bg-orange-200 h-[600px] w-[50px]  ">
-              {/* <div className='text-white text-[10px] m-2 p-2 bg-orange-300 rounded-xl text-left font-bold mt-[250px] ' >
+            
+            <div className="relative border-[20px] border-orange-500  ">
+              <div
+                className="absolute inset-0 bg-center opacity-15 "
+                style={{ backgroundImage: `url(${gihub})` }}
+              ></div>
 
+              {/* <div className="bg-orange-200 h-[600px] w-[50px]  "></div> */}
 
-                            <div className='bg-white text-black w-fit text-[14px] p-1 px-2 rounded-lg mt-5' >
-                                <p className='text-center font-normal' >
-                                    This certificate is issued by Genomac Innovation Hub.
-                                </p>
-                                <p className='text-center font-bold pt-10' >Address:</p>
-                                <p className='font-normal text-center' >
-                                    Genomac Holdings, beside Alari Akata Filling Station, Under-G, Ogbomoso, Oyo State, Nigeria.
-                                </p>
-                            </div>
-
-                        </div> */}
-            </div>
-
-            <div className="w-[900px] ">
-              <div className="flex justify-center -mt-7 ">
-                <img src={gihub} alt="logo" className="w-[150px] h-[150px] " />
-              </div>
-
-              <div className="text-center text-5xl uppercase -mt-10 ">
-                Certificate of Learning
-              </div>
-              <p className="text-center text-base font-bold italic ">
-                This certificate is awarded to:
-              </p>
-
-              <div className="py-10 mt-3 ">
-                <div className="text-center text-5xl border-b-2 border-orange-600 mx-40 -mt-5 font-rouge ">
-                  {formData.name}
+              <div className="w-[px] ">
+                <div className="flex justify-center -mt-5 ">
+                  <img
+                    src={gihub}
+                    alt="logo"
+                    className="w-[100px] h-[100px] "
+                  />
                 </div>
 
-                <div className="text-center mx-10 mt-3 text-lg ">
-                  <p>For completing the online program</p>
-
-                  <p className="uppercase font-bold text-lg ">
-                    how to build your first machine learning model without
-                    coding
-                  </p>
-
-                  <p className="text-base ">
-                    This is to certify the successful completion of this program
-                    and the fulfillment of all its requirements. The recipient
-                    demonstrated dedication and commitment and acquired a wealth
-                    of knowledge and skills through the program. May this serve
-                    as a testament to their hard work and future success.
-                  </p>
+                <div className="text-center text-3xl uppercase -mt-7 ">
+                  Certificate of participation
                 </div>
+                <p className="text-center text-base font-bold italic ">
+                  This certificate is awarded to:
+                </p>
 
-                <div className="text-center uppercase mt-2 font-bold text-lg ">
-                  21st march 2025
-                </div>
-              </div>
-
-              <div className="flex justify-around mx-10 -mt-20 ">
-                <div className="w-[400px] ">
-                  <div className="border-b-2 border-orange-600 w-52">
-                    <img
-                      src={sign1}
-                      alt="signature"
-                      className="w-[200px] h-[150px] -mb-10"
-                    />
+                <div className="py-10 mt-3 ">
+                  <div className="text-center text-3xl border-b-2 border-orange-600 mx-52 -mt-5 font-rouge ">
+                    {formData.name}
                   </div>
-                  <p className="font-semibold text-lg">
-                    Oluwaseyi Abraham Olawale
-                  </p>
-                  <p className="font-medium text-sm">
-                    Founder & CEO of Genomac Holdings.
-                  </p>
-                </div>
 
-                <div className="-mt-[40px] -ml-[300px] ">
-                  <img src={award} alt="award" className="w-[400px] " />
-                </div>
+                  <div className="text-center mx-10 mt-3 text-lg ">
+                    <p>For the participation in the short course:</p>
 
-                <div className="mt-[33px] ">
-                  <div className="border-b-2 border-orange-600 w-40">
-                    <img
-                      src={sign2}
-                      alt="signature"
-                      className="w-[200px] h-[100px] -mb-5"
-                    />
+                    <p className="uppercase font-bold text-lg ">
+                      how to build your first machine learning model without
+                      coding
+                    </p>
+
+                    <p className="text-base ">
+                      This is to certify the successful participation in this
+                      program and the fulfillment of all its requirements. The
+                      recipient demonstrated dedication and commitment and
+                      acquired a wealth of knowledge and skills through the
+                      program. May this serve as a testament to their hard work
+                      and future success.
+                    </p>
                   </div>
-                  <p className="font-semibold text-lg ">Aderinto Adeyemi</p>
-                  <p className="font-medium text-sm">Director, G-iHUb.</p>
+
+                  <div className="text-center uppercase mt-2 font-bold text-lg ">
+                    21st march 2025
+                  </div>
+                </div>
+
+                <div className="flex justify-around mx-10 -mt-20 ">
+                  <div className="w-[400px] ">
+                    <div className="border-b-2 border-orange-600 w-52">
+                      <img
+                        src={sign1}
+                        alt="signature"
+                        className="w-[200px] h-[150px] -mb-10"
+                      />
+                    </div>
+                    <p className="font-semibold text-lg">
+                      Oluwaseyi Abraham Olawale
+                    </p>
+                    <p className="font-medium text-sm">
+                      Founder & CEO of Genomac Holdings.
+                    </p>
+                  </div>
+
+                  <div className="-mt-[40px] -ml-[300px] ">
+                    <img src={award} alt="award" className="w-[400px] " />
+                  </div>
+
+                  <div className="mt-[33px] ">
+                    <div className="border-b-2 border-orange-600 w-40">
+                      <img
+                        src={sign2}
+                        alt="signature"
+                        className="w-[200px] h-[100px] -mb-5"
+                      />
+                    </div>
+                    <p className="font-semibold text-lg ">Aderinto Adeyemi</p>
+                    <p className="font-medium text-sm">Director, G-iHUb.</p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="bg-orange-200 h-[600px] w-[50px]  ">
+              {/* <div className="bg-orange-200 h-[600px] w-[50px]  "></div> */}
             </div>
-                      
           </div>
         </div>
       </div>
