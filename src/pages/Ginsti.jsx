@@ -76,7 +76,7 @@ const Ginsti = () => {
                     <img src={logo} alt="logo" className="w-[80px] " />
                   </p>
                   <p className="w-[1px] h-[50px] bg-purple-600 mt-4 "></p>
-                  <p className="mt-5 pr-16 font-thin text-xs w-[200px] ">
+                  <p className="mt-5 pr-16 font-bold text-xs w-[200px] ">
                     Genomac Institute Inc.
                     <p className='-ml-2' >| USA Incorporated</p>
                   </p>
@@ -87,7 +87,7 @@ const Ginsti = () => {
                     certificate of learning
                   </p>
                   <p className="text-center italic font-bold ">
-                    this certificate is rewarded to:
+                    this certificate is awarded to:
                   </p>
                 </div>
 
