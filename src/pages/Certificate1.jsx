@@ -68,8 +68,7 @@ const Certificate1 = () => {
                 style={{ backgroundImage: `url(${gihub})` }}
               ></div>
 
-              <div className="w-[40px] absolute ">
-                <img src={fabric} alt="" />
+              <div className="w-[40px] absolute top-[40px] ">
                 <img
                   src={fabric}
                   alt=""
@@ -142,8 +141,7 @@ const Certificate1 = () => {
                 />
               </div>
 
-              <div className="w-[40px] flex flex-col absolute right-0 ">
-                <img src={fabric} alt="" />
+              <div className="w-[40px] flex flex-col absolute right-0 top-[40px] ">
                 <img
                   src={fabric}
                   alt=""
@@ -217,7 +215,7 @@ const Certificate1 = () => {
               </div>
 
               <div className="w-[40px] flex absolute top-0 ">
-                <img src={fabric} alt="" />
+                <img src={gihub} alt="" />
                 <img
                   src={fabric}
                   alt=""
@@ -333,6 +331,7 @@ const Certificate1 = () => {
                   alt=""
                   className="border-b-2 border-orange-500"
                 />
+                <img src={gihub} alt="" />
               </div>
 
               <div className="w-[40px] flex absolute bottom-0 ">
