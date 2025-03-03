@@ -4,6 +4,7 @@ import { toPng } from 'html-to-image';
 import sign1 from '../assets/sign1.png';
 import award from '../assets/award.png';
 import sign2 from '../assets/sign2.png';
+import fabric from '../assets/fabric.jpg';
 
 const Certificate1 = () => {
 
@@ -61,17 +62,403 @@ const Certificate1 = () => {
           className="flex flex-col justify-center items-center bg-white relative"
         >
           <div className="bg-white border border-1 w-[1000px] h-[600px] flex">
-            
-            <div className="relative border-[20px] border-orange-500  ">
+            <div className="relative borde border-orange-500  ">
               <div
                 className="absolute inset-0 bg-center opacity-15 "
                 style={{ backgroundImage: `url(${gihub})` }}
               ></div>
 
+              <div className="w-[40px] absolute ">
+                <img src={fabric} alt="" />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-r-2 border-orange-500 h-[24px] w-[40px] "
+                />
+              </div>
+
+              <div className="w-[40px] flex flex-col absolute right-0 ">
+                <img src={fabric} alt="" />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-l-2 border-orange-500 h-[24px] w-[40px] "
+                />
+              </div>
+
+              <div className="w-[40px] flex absolute top-0 ">
+                <img src={fabric} alt="" />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-b-2 border-orange-500"
+                />
+              </div>
+
+              <div className="w-[40px] flex absolute bottom-0 ">
+                <img src={gihub} alt="" className="" />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img
+                  src={fabric}
+                  alt=""
+                  className="border-t-2 border-orange-500"
+                />
+                <img src={gihub} alt="" className="" />
+              </div>
+
               {/* <div className="bg-orange-200 h-[600px] w-[50px]  "></div> */}
 
-              <div className="w-[px] ">
-                <div className="flex justify-center -mt-5 ">
+              <div className="w-[px] mx-10 ">
+                <div className="flex justify-center mt-7 ">
                   <img
                     src={gihub}
                     alt="logo"
