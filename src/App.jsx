@@ -13,7 +13,7 @@ import GSCCert from './pages/GSCCert';
 import GIHUB_BioCoding from './pages/GIHUB_BioCoding';
 import BioCoding_Cert from './pages/BioCoding_Cert';
 import Ginsti2 from './pages/ginsti2';
-import Ginstihome2 from './pages/ginstihome2';
+import Ginstihome2 from './pages/Ginstihome2';
 
 
 function App() {
