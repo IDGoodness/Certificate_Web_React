@@ -3,6 +3,7 @@ import React from 'react'
 import award from "../assets/award.png";
 import barcode from "../assets/barcode.png";
 import logo from "../assets/ginsti.png";
+import gihub from "../assets/gihub.png";
 import nig from "../assets/nig.png";
 import sign1 from "../assets/sign1.png";
 import sign2 from "../assets/sign2.png";
@@ -57,22 +58,25 @@ const BioCoding_Cert = () => {
   }, [ref]);
     
     
-  return (
+return (
     <>
-      <div className="min-w-[1000px] flex justify-center items-center min-h-screen">
-        <div
-          ref={ref}
-          id="certificateContent"
-          className="flex flex-col justify-center items-center bg-white "
-        >
-          <div className="relative w-[1000px] h-[600px] border flex ">
+        <div className="min-w-[1000px] flex justify-center items-center min-h-screen">
+            <div
+                ref={ref}
+                id="certificateContent"
+                className="flex flex-col justify-center items-center bg-white "
+            >
+            <div className="relative w-[1000px] h-[600px] border flex ">
             <div className="bg-gradient-to-b from-pink-400 via-purple-900 to-purple-900 w-[200px] h-[600px] ">
-              <div className="flex ">
-                <div className="mx-auto">
-                  <img src={logo} alt="logo2" className="w-28" />
+              <div className="flex absolute ">
+                <div className="w-[100px] relative top-1 left-3 ">
+                  <img src={logo} alt="logo2" className="" />
+                </div>
+                <div className="w-[150px] relative -top-5 right-9 ">
+                  <img src={gihub} alt="logo2" className="" />
                 </div>
               </div>
-              <div className="-mt-2 ">
+              <div className="mt-24 ">
                 <p className="text-white text-center text-[13px] ">
                   GENOMAC INSTITUTE INC
                 </p>
@@ -136,7 +140,7 @@ const BioCoding_Cert = () => {
                 </div>
 
                 <p className=" capitalize py-4 pr-1 text-center font-base ">
-                  For Successfully Participating in the International Research Internship Program on the application of Genomics and Bioinformatics Techniques in <span className="font-bold" > {formData.course} </span> Organized by Genomac Institute Inc.
+                  For Successfully Participating in the International Virtual Bio-Coding workshop on mastering python and r for basic to advance genomics and Bioinformatics with NGS research applications organized by Genomac Institute Inc.
                 </p>
 
                 <p className="font-bold mx-auto text-center w-[300px] uppercase ">
