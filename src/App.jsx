@@ -12,8 +12,8 @@ import GSCHome from './pages/GSCHome';
 import GSCCert from './pages/GSCCert';
 import GIHUB_BioCoding from './pages/GIHUB_BioCoding';
 import BioCoding_Cert from './pages/BioCoding_Cert';
-
-
+import Ginsti2 from './pages/ginsti2';
+import Ginstihome2 from './pages/ginstihome2';
 
 
 function App() {
@@ -34,6 +34,8 @@ function App() {
         <Route path="/gsccert" element={<GSCCert />} />
         <Route path="/gihubbiocoding" element={<GIHUB_BioCoding />} />
         <Route path="/biocodingcert" element={<BioCoding_Cert />} />
+        <Route path="/ginsti2" element={<Ginsti2 />} />
+        <Route path="/ginstihome2" element={<Ginstihome2 />} />
       </Routes>
     </BrowserRouter>
   )
