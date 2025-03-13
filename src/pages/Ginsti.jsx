@@ -84,7 +84,7 @@ const Ginsti = () => {
 
                 <div className="text-center mx-auto">
                   <p className="uppercase font-semibold text-3xl ">
-                    certificate of learning
+                    certificate of attendance
                   </p>
                   <p className="text-center italic font-bold ">
                     this certificate is awarded to:
@@ -97,20 +97,15 @@ const Ginsti = () => {
                     {formData.name}{" "}
                   </p>
                   <p>
-                    for demonstrating active learning in the short course on
+                    for participation in the webinar:
                   </p>
-                  <p className="font-bold text-purple-800 capitalize text-lg py-3 ">
-                    Applied functional genomics and bioinformatics
+                  <p className="font-bold text-purple-800 uppercase text-lg ">
+                    The future of bioinformatics: <br /> adapting to AI automation and next gen tech revolution
                   </p>
-                  <p className="mx-20 ">
-                    This fully funded short course covers an in-depth hands-on
-                    exploration of functional genomics focusing on genome
-                    annotation and functional discovery across plant, animal and
-                    human genomes by leveraging bioinformatics tools for
-                    comprehensive genomic analysis, enabling extraction of
-                    meaningful insights from raw genomic data.
+                  <p className="mx-40 ">
+                    This is to certify the successful participation in the international webinar program organized by Genomac Institute Inc.
                   </p>
-                  <p className="font-bold uppercase"> {formattedDate} </p>
+                  <p className="font-bold uppercase"> 13th march 2025 </p>
                 </div>
 
                 <div className="flex justify-between mx-32 ">

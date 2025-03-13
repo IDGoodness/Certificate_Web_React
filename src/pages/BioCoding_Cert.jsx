@@ -1,23 +1,23 @@
 import { useEffect, useState, useRef, useCallback } from "react";
-import sign1 from "../assets/sign1.png";
-import sign2 from "../assets/signInsti.png";
+import React from 'react'
 import award from "../assets/award.png";
 import barcode from "../assets/barcode.png";
 import logo from "../assets/ginsti.png";
-import usa from "../assets/usa.png";
 import nig from "../assets/nig.png";
+import sign1 from "../assets/sign1.png";
+import sign2 from "../assets/sign2.png";
+import usa from "../assets/usa.png";
 import { toPng } from "html-to-image";
 
 
 
-
-
-const Certificate = () => {
+const BioCoding_Cert = () => {
+    
   const [formData, setFormData] = useState({
     name: "",
     // startMonth: "",
     // endMonth: "",
-    course: ""
+    course: "",
   });
 
   useEffect(() => {
@@ -31,32 +31,32 @@ const Certificate = () => {
       name: storedName || "",
       // startMonth: storedStartMonth || "",
       // endMonth: storedEndMonth || "",
-      course: storedCourse || ""
+      course: storedCourse || "",
     });
   }, []);
 
   const ref = useRef(null);
 
   const onButtonClick = useCallback(() => {
-      if (ref.current === null ) {
-      return
-      }
+    if (ref.current === null) {
+      return;
+    }
 
-      toPng(ref.current, { cacheBust: true, })
+    toPng(ref.current, { cacheBust: true })
       .then((dataUrl) => {
-          const link = document.createElement('a')
-          link.download = 'my-certificate.png'
-          link.href = dataUrl
-          link.click()
+        const link = document.createElement("a");
+        link.download = "my-certificate.png";
+        link.href = dataUrl;
+        link.click();
       })
       .catch(() => {
-          alert("An error occurred while generating your certificate. Please try again.")
-      })
-    }, [ref])
-  
- 
-
-
+        alert(
+          "An error occurred while generating your certificate. Please try again."
+        );
+      });
+  }, [ref]);
+    
+    
   return (
     <>
       <div className="min-w-[1000px] flex justify-center items-center min-h-screen">
@@ -136,7 +136,7 @@ const Certificate = () => {
                 </div>
 
                 <p className=" capitalize py-4 pr-1 text-center font-base ">
-                  For Successfully Participating in the Short Term Research Program on the application of Genomics and Bioinformatics Techniques in <span className="font-bold" > {formData.course} </span> Organized by Genomac Institute Inc.
+                  For Successfully Participating in the International Research Internship Program on the application of Genomics and Bioinformatics Techniques in <span className="font-bold" > {formData.course} </span> Organized by Genomac Institute Inc.
                 </p>
 
                 <p className="font-bold mx-auto text-center w-[300px] uppercase ">
@@ -169,19 +169,19 @@ const Certificate = () => {
                     <img src={award} alt="award" />
                   </div>
 
-                  <div className="mt-2 ">
+                  <div className="mt-8 ">
                     <p className="border-b-2 border-purple-800 w-52 ">
                       <img
                         src={sign2}
                         alt="signature"
-                        className="w-[200px] h-[150px] -mb-12 "
+                        className="w-[150px] h-[100px] -mb-5 "
                       />
                     </p>
-                    <p className="text-base font-semibold">
-                      Oluwaseun Oyekunle Agboola
+                    <p className="text-base font-semibold ">
+                      Adeyemi Aderinto
                     </p>
                     <p className="text-xs font-medium">
-                      Director, Genomac Institute INC.
+                      Director, G-iHub.
                     </p>
                   </div>
 
@@ -198,7 +198,7 @@ const Certificate = () => {
             </button>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Certificate;
+export default BioCoding_Cert
