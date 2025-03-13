@@ -69,14 +69,14 @@ return (
             <div className="relative w-[1000px] h-[600px] border flex ">
             <div className="bg-gradient-to-b from-pink-400 via-purple-900 to-purple-900 w-[200px] h-[600px] ">
               <div className="flex absolute ">
-                <div className="w-[100px] relative top-1 left-3 ">
+                <div className="w-[70px] relative top-3 left-8 ">
                   <img src={logo} alt="logo2" className="" />
                 </div>
-                <div className="w-[150px] relative -top-5 right-9 ">
+                <div className="w-[100px] relative mt-0.1 ">
                   <img src={gihub} alt="logo2" className="" />
                 </div>
               </div>
-              <div className="mt-24 ">
+              <div className="mt-20 ">
                 <p className="text-white text-center text-[13px] ">
                   GENOMAC INSTITUTE INC
                 </p>
