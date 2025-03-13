@@ -121,7 +121,7 @@ const Certificate = () => {
             <div className="w-[800px]">
               <div className="bg-white w-[800px] lg:h-[600px] lg:ml-4 lg:p-10">
                 <div className="p-5 bg-purple-900 text-white text-4xl text-center tracking-widest uppercase ">
-                  CERTIFICATE OF EXcellence
+                  CERTIFICATE OF ParticipATION
                 </div>
 
                 <div className="font-base text-center mt-5 italic">
