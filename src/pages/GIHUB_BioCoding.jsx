@@ -21,7 +21,8 @@ const GIHUB_Biocoding = () => {
         const worksheet = workbook.Sheets[sheetName];
         const data = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
         const names = data.flat().map((name) =>
-        name.toString().trim().replace(/[^a-zA-Z0-9 -]/g, "").toLowerCase());
+          name.toString().trim().replace(/[^a-zA-Z0-9 -]/g, "").toLowerCase()
+        );
         setAllowedNames(names);
       } catch (error) {
         console.error("Error reading Excel file:", error);
@@ -50,15 +51,15 @@ const GIHUB_Biocoding = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen ml-[150px] ">
+    <div className="flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
       <div className="w-full max-w-lg lg:w-fit lg:h-auto bg-white p-6 shadow-2xl rounded-xl">
-        <h1 className="text-center text-3xl text-white p-5 rounded-t-xl h-[60px] bg-orange-600 ">
-          <img src={gihub} alt="Logo" className="w-[100px] h-[100px] mx-auto -mt-9 " />
+        <h1 className="text-center text-3xl text-white p-5 rounded-t-xl h-[60px] bg-orange-600">
+          <img src={gihub} alt="Logo" className="w-[100px] h-[100px] mx-auto -mt-9" />
         </h1>
         <form id="certificateForm" className="p-5" onSubmit={handleSubmit}>
-          <div className="">
-            <p className="font-medium py-1 " >Enter your name to generate your certificate</p>
-            <div className="py-5 mr-1 ">
+          <div>
+            <p className="font-medium py-1">Enter your name to generate your certificate</p>
+            <div className="py-5">
               <input
                 type="text"
                 id="name"
@@ -71,7 +72,6 @@ const GIHUB_Biocoding = () => {
               />
             </div>
           </div>
-
           <button
             type="submit"
             className="bg-orange-600 text-white p-3 my-5 rounded-full w-full hover:bg-orange-700"
