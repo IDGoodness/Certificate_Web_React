@@ -140,7 +140,7 @@ const Certificate = () => {
                 </p>
 
                 <p className="font-bold mx-auto text-center w-[300px] uppercase ">
-                  november - february 2025
+                  november - december 2024
                 </p>
 
                 <div className="flex justify-between -mt-7 ">

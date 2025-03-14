@@ -143,8 +143,8 @@ return (
                   For Successfully Participating in the International Virtual Bio-Coding workshop on mastering python and r for basic to advance genomics and Bioinformatics with NGS research applications organized by Genomac Institute Inc.
                 </p>
 
-                <p className="font-bold mx-auto text-center w-[300px] uppercase ">
-                  november - february 2025
+                <p className="font-bold mx-auto text-center w-[300px] uppercase border border-1 border-black ">
+                  27th january - 6th march 2025
                 </p>
 
                 <div className="flex justify-between -mt-7 ">
