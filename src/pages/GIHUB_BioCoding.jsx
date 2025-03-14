@@ -1,12 +1,34 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import * as XLSX from "xlsx";
 
 const GIHUB_Biocoding = () => {
   const [formData, setFormData] = useState({
     name: "",
   });
+  const [allowedNames, setAllowedNames] = useState([]);
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchNamesFromExcel = async () => {
+      try {
+        const response = await fetch("/src/assets/2025 final biocoding.xlsx");
+        const arrayBuffer = await response.arrayBuffer();
+        const workbook = XLSX.read(arrayBuffer, { type: "array" });
+        const sheetName = workbook.SheetNames[0];
+        const worksheet = workbook.Sheets[sheetName];
+        const data = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+        const names = data.flat().map((name) =>
+        name.toString().trim().replace(/[^a-zA-Z0-9 -]/g, "").toLowerCase());
+        setAllowedNames(names);
+      } catch (error) {
+        console.error("Error reading Excel file:", error);
+      }
+    };
+
+    fetchNamesFromExcel();
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,10 +37,15 @@ const GIHUB_Biocoding = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    Object.keys(formData).forEach((key) => {
-      localStorage.setItem(key, formData[key]);
-    });
-    navigate("/biocodingcert");
+    const inputName = formData.name.trim().toLowerCase();
+    if (allowedNames.includes(inputName)) {
+      Object.keys(formData).forEach((key) => {
+        localStorage.setItem(key, formData[key]);
+      });
+      navigate("/biocodingcert");
+    } else {
+      navigate("/notallowed");
+    }
   };
 
   return (

@@ -134,7 +134,7 @@ return (
 
                 <div
                   id="name"
-                  className=" capitalize border-b-4 border-purple-900 pb-1 text-center text-purple-900 mx-[70px] mt-[50px] text-4xl"
+                  className=" uppercase border-b-4 border-purple-900 pb-1 text-center text-purple-900 mx-[70px] mt-[75px] text-3xl"
                 >
                   {formData.name}
                 </div>

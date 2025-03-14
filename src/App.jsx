@@ -14,6 +14,7 @@ import GIHUB_BioCoding from './pages/GIHUB_BioCoding';
 import BioCoding_Cert from './pages/BioCoding_Cert';
 import Ginsti2 from './pages/ginsti2';
 import Ginstihome2 from './pages/Ginstihome2';
+import NotAllowed from './pages/NotAllowed';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/biocodingcert" element={<BioCoding_Cert />} />
         <Route path="/ginsti2" element={<Ginsti2 />} />
         <Route path="/ginstihome2" element={<Ginstihome2 />} />
+        <Route path="/notallowed" element={<NotAllowed />} />
       </Routes>
     </BrowserRouter>
   )
