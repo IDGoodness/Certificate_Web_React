@@ -13,7 +13,7 @@ const GIHUB_Biocoding = () => {
   useEffect(() => {
     const fetchNamesFromExcel = async () => {
       try {
-        const response = await fetch("/src/assets/2025 final biocoding.xlsx");
+        const response = await fetch("/2025 final biocoding.xlsx");
         const arrayBuffer = await response.arrayBuffer();
         const workbook = XLSX.read(arrayBuffer, { type: "array" });
         const sheetName = workbook.SheetNames[0];
