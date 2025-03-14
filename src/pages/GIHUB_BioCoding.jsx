@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import * as XLSX from "xlsx";
+import gihub from "../assets/gihub.png";
 
 const GIHUB_Biocoding = () => {
   const [formData, setFormData] = useState({
@@ -51,12 +52,13 @@ const GIHUB_Biocoding = () => {
   return (
     <div className="flex items-center justify-center min-h-screen ml-[150px] ">
       <div className="w-full max-w-lg lg:w-fit lg:h-auto bg-white p-6 shadow-2xl rounded-xl">
-        <h1 className="text-center text-3xl text-white p-5 rounded-t-xl bg-orange-600 ">
-          Certificate Generator
+        <h1 className="text-center text-3xl text-white p-5 rounded-t-xl h-[60px] bg-orange-600 ">
+          <img src={gihub} alt="Logo" className="w-[100px] h-[100px] mx-auto -mt-9 " />
         </h1>
         <form id="certificateForm" className="p-5" onSubmit={handleSubmit}>
           <div className="">
-            <div className="py-2 mr-1 ">
+            <p className="font-medium py-1 " >Enter your name to generate your certificate</p>
+            <div className="py-5 mr-1 ">
               <input
                 type="text"
                 id="name"
@@ -74,7 +76,7 @@ const GIHUB_Biocoding = () => {
             type="submit"
             className="bg-orange-600 text-white p-3 my-5 rounded-full w-full hover:bg-orange-700"
           >
-            Generate Certificate
+            Generate
           </button>
         </form>
       </div>
