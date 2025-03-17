@@ -71,7 +71,7 @@ const GSCCert = () => {
                         <div className=' text-center mx-auto pt-10 pb-10 text-black w-[1000px] h-[200px] mt-10 bg-purple-800 ' >
                             <div className='bg-white w-[800px] -mt-[40px] h-[200px] mx-auto ' >
                                 <p className='text-3xl font-bold pt-10 border-b-2 border-purple-800 mx-24 font-serif ' > {formData.name} </p>
-                                <p className='mx-auto pt-3 px-10 capitalize text-lg font-semibold ' > For Successfully Participating in the Genomics and Bioinformatics Webinar on genomic data handling, bioinformatics workflow design and career opportunities for industry and academia organized by GENOMAC Services and Consult. </p>
+                                <p className='mx-auto pt-3 px-10 capitalize text-lg font-semibold ' > Successfully Participated in the Genomics and Bioinformatics Webinar on genomic data handling, bioinformatics workflow design and career opportunities for industry and academia organized by GENOMAC Services and Consult. </p>
                                 <p className='font-extrabold uppercase ' > March 8 2025</p>
                             </div>
                         </div>
