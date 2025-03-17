@@ -43,7 +43,7 @@ const GSCHome = () => {
                 className="w-full rounded-xl p-3 pl-5 outline outline-1 hover:outline-purple-800"
               />
             </div>
-            <div className="py-2 mr-1 ">
+            {/* <div className="py-2 mr-1 ">
               <input
                 type="text"
                 id="date"
@@ -54,8 +54,8 @@ const GSCHome = () => {
                 required
                 className="w-full rounded-xl p-3 pl-5 outline outline-1 hover:outline-purple-800"
               />
-            </div>
-            <div className="py-2 mr-1 ">
+            </div> */}
+            {/* <div className="py-2 mr-1 ">
               <textarea
                 type="text"
                 id="desc"
@@ -66,7 +66,7 @@ const GSCHome = () => {
                 required
                 className="w-full h-[150px] rounded-xl p-3 pl-5 outline outline-1 hover:outline-purple-800"
               />
-            </div>
+            </div> */}
           </div>
 
           <button

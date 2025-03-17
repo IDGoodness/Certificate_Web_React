@@ -55,7 +55,7 @@ const GSCCert = () => {
         <div className='min-w-[1000px] flex justify-center items-center min-h-screen ' >
             <div ref={ref} className='flex flex-col justify-center items-center bg-white ' >
                 <div className='relative w-[1000px] h-[600px] border border-purple-500 flex ' >
-                    <div className='absolute inset-0 bg bg-center opacity-20' style={{ backgroundImage: `url(${logo})` }} ></div>
+                    <div className='absolute inset-0 bg bg-center opacity-5' style={{ backgroundImage: `url(${logo})` }} ></div>
 
                     <div className='flex flex-col mx-auto' >
                         <div className='flex text-center justify-between ' >
@@ -70,9 +70,9 @@ const GSCCert = () => {
 
                         <div className=' text-center mx-auto pt-10 pb-10 text-black w-[1000px] h-[200px] mt-10 bg-purple-800 ' >
                             <div className='bg-white w-[800px] -mt-[40px] h-[200px] mx-auto ' >
-                                <p className='text-3xl font-bold pt-10 ' > {formData.name} </p>
-                                <p className='mx-auto pt-3 px-10 ' > {formData.desc} </p>
-                                <p className='font-bold uppercase ' > {formData.date}, 2025</p>
+                                <p className='text-3xl font-bold pt-10 border-b-2 border-purple-800 mx-24 font-serif ' > {formData.name} </p>
+                                <p className='mx-auto pt-3 px-10 capitalize text-lg font-semibold ' > For Successfully Participating in the Genomics and Bioinformatics Webinar on genomic data handling, bioinformatics workflow design and career opportunities for industry and academia organized by GENOMAC Services and Consult. </p>
+                                <p className='font-extrabold uppercase ' > March 8 2025</p>
                             </div>
                         </div>
 

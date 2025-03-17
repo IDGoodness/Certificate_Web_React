@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef, useCallback } from "react";
-import React from 'react'
+// import React from 'react'
 import award from "../assets/award.png";
 import barcode from "../assets/barcode.png";
 import logo from "../assets/ginsti.png";
