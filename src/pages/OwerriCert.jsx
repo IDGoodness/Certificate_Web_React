@@ -107,10 +107,10 @@ const OwerriCert = () => {
                         </div>
 
                         {/* <div className="w-[400px] h-auto -mt-[30px] -ml-[400px] -mr-[320px] z-10"> */}
-                        <div className="-mt-2">
+                        <div className="mt-4">
                             {/* <img src={award} alt="award" /> */}
                             <p className="border-b-2 border-dashed border-purple-800 w-[200px] ">
-                                <img src={sign3} alt="signature" className="w-[200px] h-[150px] -mb-10 "/>
+                                <img src={sign3} alt="signature" className="w-[150px] h-[100px] -mb-2 "/>
                             </p>
                             <p className="text-base font-semibold">
                                 Dr. Theodore Mbata
