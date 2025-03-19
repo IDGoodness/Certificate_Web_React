@@ -15,6 +15,8 @@ import BioCoding_Cert from './pages/BioCoding_Cert';
 import Ginsti2 from './pages/ginsti2';
 import Ginstihome2 from './pages/Ginstihome2';
 import NotAllowed from './pages/NotAllowed';
+import OwerriHome from './pages/OwerriHome';
+import OwerriCert from './pages/OwerriCert';
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
         <Route path="/ginsti2" element={<Ginsti2 />} />
         <Route path="/ginstihome2" element={<Ginstihome2 />} />
         <Route path="/notallowed" element={<NotAllowed />} />
+        <Route path='/owerrihome' element={<OwerriHome />} />
+        <Route path='/owerriCert' element={<OwerriCert />} />
       </Routes>
     </BrowserRouter>
   )

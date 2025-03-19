@@ -31,30 +31,6 @@ const Ginsti2 = () => {
         name: '',
     });
 
-    const getDayWithSuffix = (day) => {
-      if (day > 3 && day < 21) return `${day}th`;
-      switch (day % 10) {
-        case 1:
-          return `${day}st`;
-        case 2:
-          return `${day}nd`;
-        case 3:
-          return `${day}rd`;
-        default:
-          return `${day}th`;
-      }
-    };
-
-    const today = new Date();
-    const dayWithSuffix = getDayWithSuffix(today.getDate());
-    const formattedDate = `${dayWithSuffix} ${today.toLocaleDateString(
-      "en-US",
-      {
-        year: "numeric",
-        month: "long",
-      }
-    )}`;
-
     useEffect(() => {
         const storedName = localStorage.getItem('name');
         setFormData({
