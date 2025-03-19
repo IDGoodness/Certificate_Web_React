@@ -1,5 +1,6 @@
 import sign1 from "../assets/sign1.png";
 import sign2 from "../assets/signInsti.png";
+import sign3 from "../assets/owerriPoly.png";
 // import award from "../assets/award.png";
 import award1 from "../assets/purpleribbon.png";
 import logo from "../assets/ginsti.png";
@@ -109,7 +110,7 @@ const OwerriCert = () => {
                         <div className="-mt-2">
                             {/* <img src={award} alt="award" /> */}
                             <p className="border-b-2 border-dashed border-purple-800 w-[200px] ">
-                                <img src={sign1} alt="signature" className="w-[200px] h-[150px] -mb-10 "/>
+                                <img src={sign3} alt="signature" className="w-[200px] h-[150px] -mb-10 "/>
                             </p>
                             <p className="text-base font-semibold">
                                 Dr. Theodore Mbata
