@@ -143,7 +143,7 @@ const Certificate = () => {
                   november - december 2024
                 </p>
 
-                <div className="flex justify-between -mt-7 ">
+                <div className="flex justify-between mt-5 ">
                   
                   <div className="w-[200px] -ml-[50px] -mr-[300px] mt-[40px] " >
                     <img src={barcode} alt="" />
