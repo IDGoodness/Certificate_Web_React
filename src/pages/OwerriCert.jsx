@@ -75,7 +75,7 @@ const OwerriCert = () => {
                         {formData.name}{" "}
                         </p>
                         
-                        <p className="mx-20 mt-5 text-xl font-bold ">
+                        <p className="mx-20 mt-5 text-xl font-semibold ">
                         Has successfully participated in the 2-Day Hands-on Workshop on Genomics and Bioinformatics held on 13th - 14th March 2025 at Federal Polytechnic Nekede Owerri, Nigeria. The participant engaged in hands-on training sessions and demonstrated a good understanding of the core concepts and techniques covered in the workshop.
                         </p>
                         <p className="font-bold uppercase hidden">
