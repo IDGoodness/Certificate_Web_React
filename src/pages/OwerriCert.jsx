@@ -62,10 +62,10 @@ const OwerriCert = () => {
 
                     <div className="text-center mx-auto">
                         <p className="uppercase font-semibold text-3xl ">
-                        certificate of learning
+                        certificate of participation
                         </p>
                         <p className="text-center italic font-bold ">
-                        this certificate is awarded to:
+                        this is to certify that
                         </p>
                     </div>
 
@@ -75,15 +75,10 @@ const OwerriCert = () => {
                         {formData.name}{" "}
                         </p>
                         
-                        <p className="mx-20 ">
-                        This is to certify the successful participation in this
-                        2-day hands-on workshop and the fulfillment of all its
-                        requirements. The recipient demonstrated dedication and
-                        commitment and acquired a wealth of knowledge and skills in
-                        Bioinformatics and Genomics through the program. May this
-                        serve as a testament to their hard work and future success.
+                        <p className="mx-20 mt-10 ">
+                        Has successfully participated in the 2-Day Hands-on Workshop on Genomics and Bioinformatics held on 13th - 14th March 2025 at Federal Polytechnic Nekede Owerri, Nigeria. The participant engaged in hands-on training sessions and demonstrated a good understanding of the core concepts and techniques covered in the workshop.
                         </p>
-                        <p className="font-bold uppercase">
+                        <p className="font-bold uppercase hidden">
                         {" "}
                         13th - 14th March 2025{" "}
                         </p>
