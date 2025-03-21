@@ -49,8 +49,8 @@ const OwerriCert = () => {
         <>
             <div className="min-w-[1000px] flex justify-center items-center min-h-screen ">
                 <div ref={ref} className="flex flex-col justify-center items-center bg-white relative">
-                    <img src={watermark} alt="watermark" className="w-[1000px] h-[500px] -mt-20 opacity-30 " />
-                    <div className="absolute w-[1000px] h-[600px] border-[20px] m-10 border-purple-500 flex ">
+                    <img src={watermark} alt="watermark" className="absolute w-[1000px] -mt-20 h-[500px] opacity-30 " />
+                    <div className="relative w-[1000px] h-[600px] border-[20px] m-10 border-purple-500 flex ">
                         <div className="flex flex-col mx-auto">
                             <div className="flex text-center mx-auto pl-20 ">
                                 <p className="mr-2 ">
