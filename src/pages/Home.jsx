@@ -18,21 +18,21 @@ const Home = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const userName = formData.name.trim().toLowerCase();
-    const certificateGenerated = localStorage.getItem(
-      `certificateGenerated_${userName}`
-    );
+    //const userName = formData.name.trim().toLowerCase();
+    // const certificateGenerated = localStorage.getItem(
+    //  `certificateGenerated_${userName}`
+    //);
 
-    if (certificateGenerated) {
-      alert("You have already generated a certificate.");
-      return;
-    }
+    //if (certificateGenerated) {
+      //alert("You have already generated a certificate.");
+    //  return;
+    //}
 
-    Object.keys(formData).forEach((key) => {
-      localStorage.setItem(key, formData[key]);
-    });
+   // Object.keys(formData).forEach((key) => {
+     // localStorage.setItem(key, formData[key]);
+    //});
 
-    localStorage.setItem(`certificateGenerated_${userName}`, "true");
+    //localStorage.setItem(`certificateGenerated_${userName}`, "true");
     navigate("/certificate");
   };
 
