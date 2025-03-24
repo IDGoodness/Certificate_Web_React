@@ -8,16 +8,12 @@ import usa from "../assets/usa.png";
 import nig from "../assets/nig.png";
 import { toPng } from "html-to-image";
 
-
-
-
-
 const Certificate = () => {
   const [formData, setFormData] = useState({
     name: "",
     // startMonth: "",
     // endMonth: "",
-    course: ""
+    course: "",
   });
 
   useEffect(() => {
@@ -31,31 +27,30 @@ const Certificate = () => {
       name: storedName || "",
       // startMonth: storedStartMonth || "",
       // endMonth: storedEndMonth || "",
-      course: storedCourse || ""
+      course: storedCourse || "",
     });
   }, []);
 
   const ref = useRef(null);
 
   const onButtonClick = useCallback(() => {
-      if (ref.current === null ) {
-      return
-      }
+    if (ref.current === null) {
+      return;
+    }
 
-      toPng(ref.current, { cacheBust: true, })
+    toPng(ref.current, { cacheBust: true })
       .then((dataUrl) => {
-          const link = document.createElement('a')
-          link.download = 'my-certificate.png'
-          link.href = dataUrl
-          link.click()
+        const link = document.createElement("a");
+        link.download = "my-certificate.png";
+        link.href = dataUrl;
+        link.click();
       })
       .catch(() => {
-          alert("An error occurred while generating your certificate. Please try again.")
-      })
-    }, [ref])
-  
- 
-
+        alert(
+          "An error occurred while generating your certificate. Please try again."
+        );
+      });
+  }, [ref]);
 
   return (
     <>
@@ -136,16 +131,18 @@ const Certificate = () => {
                 </div>
 
                 <p className=" capitalize py-4 pr-1 text-center font-base ">
-                  For Successfully Participating in the Short Term Research Program on the application of Genomics and Bioinformatics Techniques in <span className="font-bold" > {formData.course} </span> Organized by Genomac Institute Inc.
+                  For Successfully Participating in the Internship on the
+                  application of Genomics and Bioinformatics Techniques in{" "}
+                  <span className="font-bold"> {formData.course} </span>{" "}
+                  Organized by Genomac Institute Inc.
                 </p>
 
                 <p className="font-bold mx-auto text-center w-[300px] uppercase ">
-                  november - december 2024
+                  december 2024 - march 2025
                 </p>
 
                 <div className="flex justify-between mt-5 ">
-                  
-                  <div className="w-[200px] -ml-[50px] -mr-[300px] mt-[40px] " >
+                  <div className="w-[200px] -ml-[50px] -mr-[300px] mt-[40px] ">
                     <img src={barcode} alt="" />
                   </div>
 
@@ -184,7 +181,6 @@ const Certificate = () => {
                       Director, Genomac Institute INC.
                     </p>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -192,10 +188,13 @@ const Certificate = () => {
         </div>
       </div>
 
-      <div className='flex justify-center -mt-9' >
-            <button className='bg-purple-600 p-2 rounded-xl hover:bg-purple-700 text-white' onClick={onButtonClick} >
-            Download Certificate
-            </button>
+      <div className="flex justify-center -mt-9">
+        <button
+          className="bg-purple-600 p-2 rounded-xl hover:bg-purple-700 text-white"
+          onClick={onButtonClick}
+        >
+          Download Certificate
+        </button>
       </div>
     </>
   );
