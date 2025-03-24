@@ -18,7 +18,7 @@ const Home = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //const userName = formData.name.trim().toLowerCase();
+    const userName = formData.name.trim().toLowerCase();
     // const certificateGenerated = localStorage.getItem(
     //  `certificateGenerated_${userName}`
     //);
@@ -28,9 +28,9 @@ const Home = () => {
     //  return;
     //}
 
-   // Object.keys(formData).forEach((key) => {
-     // localStorage.setItem(key, formData[key]);
-    //});
+    Object.keys(formData).forEach((key) => {
+      localStorage.setItem(key, formData[key]);
+    });
 
     //localStorage.setItem(`certificateGenerated_${userName}`, "true");
     navigate("/certificate");
