@@ -55,8 +55,7 @@ const Home = () => {
                   Course
                 </option>
                 <option value="Human Microbe">Human Microbe</option>
-                <option value="Epidemology & Metagenomics">
-                  Epidemology & Metagenomics
+                <option value="Epidemiology & Metagenomics">Epidemiology & Metagenomics
                 </option>
                 <option value="Plant Genomics">Plant Genomics</option>
                 <option value="Cancer Genomics">Cancer Genomics</option>
