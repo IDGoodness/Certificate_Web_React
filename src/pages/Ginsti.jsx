@@ -99,16 +99,11 @@ const Ginsti = () => {
                   <p>
                     for demonstrating active learning in the short course on
                   </p>
-                  <p className="font-bold text-purple-800 capitalize text-lg py-3 ">
-                    Applied functional genomics and bioinformatics
+                  <p className="font-bold text-purple-800 uppercase text-lg py-1 ">
+                    Bioinformatics course 201
                   </p>
-                  <p className="mx-20 ">
-                    This fully funded short course covers an in-depth hands-on
-                    exploration of functional genomics focusing on genome
-                    annotation and functional discovery across plant, animal and
-                    human genomes by leveraging bioinformatics tools for
-                    comprehensive genomic analysis, enabling extraction of
-                    meaningful insights from raw genomic data.
+                  <p className="mx-16 ">
+                    This course covers bioinformatics fundamentals, DNA sequencing technologies, codon and protein coding identification, comparative genomics, exploration of gene families and functional annotation across species, whole genome/exome alignment for detecting genomic rearrangements associated with diseases, and whole genome/exome phylogenetics for evolutionary insights.
                   </p>
                   <p className="font-bold uppercase"> {formattedDate} </p>
                 </div>
