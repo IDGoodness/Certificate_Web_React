@@ -17,6 +17,8 @@ import Ginstihome2 from './pages/Ginstihome2';
 import NotAllowed from './pages/NotAllowed';
 import OwerriHome from './pages/OwerriHome';
 import OwerriCert from './pages/OwerriCert';
+import GinstiHome3 from './pages/GinstiHome3';
+import Ginsti3 from './pages/Ginsti3';
 
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
         <Route path="/notallowed" element={<NotAllowed />} />
         <Route path='/owerrihome' element={<OwerriHome />} />
         <Route path='/owerriCert' element={<OwerriCert />} />
+        <Route path='/ginsti3' element={<Ginsti3 />} />
+        <Route path='/ginstihome3' element={<GinstiHome3 />} />
       </Routes>
     </BrowserRouter>
   )

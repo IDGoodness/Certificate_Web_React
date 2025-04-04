@@ -10,7 +10,7 @@ import watermark from '../assets/watermark.jpg';
 
 
 
-const Ginsti = () => {
+const Ginsti3 = () => {
     const ref = useRef(null);
 
     const onButtonClick = useCallback(() => {
@@ -70,11 +70,11 @@ const Ginsti = () => {
         <div className="min-w-[1000px] flex justify-center items-center min-h-screen ">
           <div
             ref={ref}
-            className="flex flex-col justify-center items-center bg-white "
+            className="flex flex-col justify-center items-center bg-white relative "
           >
-            <img src={watermark} alt="genes" className='absolute w-[1000px] -mt-52 h-[800px] opacity-30 z-0 ' />
+            <img src={watermark} alt="Genes" className="absolute w-[1000px] -mt-52 h-[800px] opacity-30 z-0 " />
             <div className="relative w-[1000px] h-[600px] border-[20px] m-10 border-purple-500 flex ">
-              <div className="flex flex-col mx-auto">
+              <div className="flex flex-col mx-auto relative">
                 <div className="flex text-center mx-auto pl-20 ">
                   <p className="mr-2 ">
                     <img src={logo} alt="logo" className="w-[80px] " />
@@ -82,7 +82,7 @@ const Ginsti = () => {
                   <p className="w-[1px] h-[50px] bg-purple-600 mt-4 "></p>
                   <p className="mt-5 pr-16 font-bold text-xs w-[200px] ">
                     Genomac Institute Inc.
-                    <p className='-ml-2' >| USA Incorporated</p>
+                    <p className="-ml-2">| USA Incorporated</p>
                   </p>
                 </div>
 
@@ -97,22 +97,22 @@ const Ginsti = () => {
 
                 <div className=" text-center mx-auto pt-5 pb-10 w-[1000px] h-[200px] mt-5 ">
                   <p className="text-3xl font-semibold border-b-2 mx-[300px] pb-2 mb-1 border-purple-800 border-dashed ">
-                    {" "}
-                    {formData.name}{" "}
+                    {formData.name}
                   </p>
                   <p>
                     for demonstrating active learning in the short course on
                   </p>
-                  <p className="font-bold text-purple-800 capitalize text-lg py-3 ">
-                    Applied functional genomics and bioinformatics
+                  <p className="font-bold text-purple-800 uppercase text-lg py-1 ">
+                    Bioinformatics course 201
                   </p>
-                  <p className="mx-20 ">
-                    This fully funded short course covers an in-depth hands-on
-                    exploration of functional genomics focusing on genome
-                    annotation and functional discovery across plant, animal and
-                    human genomes by leveraging bioinformatics tools for
-                    comprehensive genomic analysis, enabling extraction of
-                    meaningful insights from raw genomic data.
+                  <p className="mx-16 ">
+                    This course covers bioinformatics fundamentals, DNA
+                    sequencing technologies, codon and protein coding
+                    identification, comparative genomics, exploration of gene
+                    families and functional annotation across species, whole
+                    genome/exome alignment for detecting genomic rearrangements
+                    associated with diseases, and whole genome/exome
+                    phylogenetics for evolutionary insights.
                   </p>
                   <p className="font-bold uppercase"> {formattedDate} </p>
                 </div>
@@ -175,4 +175,4 @@ const Ginsti = () => {
     );
 }
 
-export default Ginsti;
+export default Ginsti3;
