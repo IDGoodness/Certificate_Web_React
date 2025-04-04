@@ -93,8 +93,7 @@ const Ginsti = () => {
 
                 <div className=" text-center mx-auto pt-5 pb-10 w-[1000px] h-[200px] mt-5 ">
                   <p className="text-3xl font-semibold border-b-2 mx-[300px] pb-2 mb-1 border-purple-800 border-dashed ">
-                    {" "}
-                    {formData.name}{" "}
+                    {formData.name}
                   </p>
                   <p>
                     for demonstrating active learning in the short course on
