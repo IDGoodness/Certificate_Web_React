@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/ginsti.png";
+
+
 
 const Ginstihome2 = () => {
   const [formData, setFormData] = useState({
@@ -24,12 +27,16 @@ const Ginstihome2 = () => {
   return (
     <div className="flex items-center justify-center min-h-screen ml-[150px] ">
       <div className="w-full max-w-lg lg:w-fit lg:h-auto bg-white p-6 shadow-2xl rounded-xl">
-        <h1 className="text-center text-3xl text-white p-5 rounded-t-xl bg-purple-500 ">
-          Certificate Generator
+        <h1 className="flex justify-center ">
+          <img src={logo} alt="Logo" className="w-24" />
         </h1>
         <form id="certificateForm" className="p-5" onSubmit={handleSubmit}>
           <div className="">
-            <div className="py-2 mr-1 ">
+            <h3 className="text-xs text-center italic ">
+              Enter your name below <br /> to generate certificate your
+              certificate.
+            </h3>
+            <div className="py-5 mr-1 ">
               <input
                 type="text"
                 id="name"
@@ -45,7 +52,7 @@ const Ginstihome2 = () => {
 
           <button
             type="submit"
-            className="bg-purple-500 text-white p-3 my-5 rounded-full w-full hover:bg-purple-600"
+            className="bg-purple-900 text-white p-3 my-1 rounded-xl w-full hover:bg-purple-800"
           >
             Generate Certificate
           </button>

@@ -6,6 +6,9 @@ import sign2 from '../assets/signInsti.png';
 import award from '../assets/award.png';
 import award1 from '../assets/purpleribbon.png';
 import { toPng } from 'html-to-image';
+import watermark from '../assets/watermark.jpg';
+
+
 
 const Ginsti = () => {
     const ref = useRef(null);
@@ -69,7 +72,16 @@ const Ginsti = () => {
             ref={ref}
             className="flex flex-col justify-center items-center bg-white "
           >
-            <div className="relative w-[1000px] h-[600px] border-[20px] m-10 border-purple-500 flex ">
+            <div
+              className="relative w-[1000px] h-[600px] border-[20px] m-10 border-purple-500 flex "
+              style={{
+                backgroundImage: `url(${watermark})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                opacity: 0.9, // Adjust opacity if needed
+              }}
+            >
               <div className="flex flex-col mx-auto">
                 <div className="flex text-center mx-auto pl-20 ">
                   <p className="mr-2 ">
@@ -78,7 +90,7 @@ const Ginsti = () => {
                   <p className="w-[1px] h-[50px] bg-purple-600 mt-4 "></p>
                   <p className="mt-5 pr-16 font-bold text-xs w-[200px] ">
                     Genomac Institute Inc.
-                    <p className='-ml-2' >| USA Incorporated</p>
+                    <p className="-ml-2">| USA Incorporated</p>
                   </p>
                 </div>
 
@@ -102,7 +114,13 @@ const Ginsti = () => {
                     Bioinformatics course 201
                   </p>
                   <p className="mx-16 ">
-                    This course covers bioinformatics fundamentals, DNA sequencing technologies, codon and protein coding identification, comparative genomics, exploration of gene families and functional annotation across species, whole genome/exome alignment for detecting genomic rearrangements associated with diseases, and whole genome/exome phylogenetics for evolutionary insights.
+                    This course covers bioinformatics fundamentals, DNA
+                    sequencing technologies, codon and protein coding
+                    identification, comparative genomics, exploration of gene
+                    families and functional annotation across species, whole
+                    genome/exome alignment for detecting genomic rearrangements
+                    associated with diseases, and whole genome/exome
+                    phylogenetics for evolutionary insights.
                   </p>
                   <p className="font-bold uppercase"> {formattedDate} </p>
                 </div>
