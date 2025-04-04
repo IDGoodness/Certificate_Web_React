@@ -54,34 +54,31 @@ const Ginsti2 = () => {
                   <p className="w-[1px] h-[50px] bg-purple-600 mt-4 "></p>
                   <p className="mt-5 pr-16 font-bold text-xs w-[200px] ">
                     Genomac Institute Inc.
-                    <p className='-ml-2' >| USA Incorporated</p>
+                    <p className="-ml-2">| USA Incorporated</p>
                   </p>
                 </div>
 
                 <div className="text-center mx-auto">
                   <p className="uppercase font-semibold text-3xl ">
-                    certificate of attendance
+                    certificate of participation
                   </p>
                   <p className="text-center italic font-bold ">
-                    this certificate is awarded to:
+                    this certificate is presented to:
                   </p>
                 </div>
 
                 <div className=" text-center mx-auto pt-5 pb-10 w-[1000px] h-[200px] mt-5 ">
                   <p className="text-3xl font-semibold border-b-2 mx-[300px] pb-2 mb-1 border-purple-800 border-dashed ">
-                    {" "}
-                    {formData.name}{" "}
+                    {formData.name}
                   </p>
-                  <p>
-                    for participation in the webinar:
+                  <p className="mx-28 pt-5 text-md">
+                    For successfully participating in the Fully Funded
+                    International Bootcamp on Genomics and Bioinformatics from
+                    Introduction to the field to Hands-on NGS Data Collection
+                    and exploration of cutting-edge tools for analyzing genomic
+                    data. Organized by Genomac Institute Inc .
                   </p>
-                  <p className="font-bold text-purple-800 uppercase text-lg ">
-                    The future of bioinformatics: <br /> adapting to AI automation and next gen tech revolution
-                  </p>
-                  <p className="mx-40 ">
-                    This is to certify the successful participation in the international webinar program organized by Genomac Institute Inc.
-                  </p>
-                  <p className="font-bold uppercase"> 13th march 2025 </p>
+                  <p className="font-bold "> 10th - 11th APRIL 2025 </p>
                 </div>
 
                 <div className="flex justify-between mx-32 ">
