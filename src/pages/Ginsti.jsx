@@ -70,19 +70,11 @@ const Ginsti = () => {
         <div className="min-w-[1000px] flex justify-center items-center min-h-screen ">
           <div
             ref={ref}
-            className="flex flex-col justify-center items-center bg-white "
+            className="flex flex-col justify-center items-center bg-white relative "
           >
-            <div
-              className="relative w-[1000px] h-[600px] border-[20px] m-10 border-purple-500 flex "
-              style={{
-                backgroundImage: `url(${watermark})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                opacity: 0.9, // Adjust opacity if needed
-              }}
-            >
-              <div className="flex flex-col mx-auto">
+            <img src={watermark} alt="Genes" className="absolute w-[1000px] -mt-52 h-[800px] opacity-30 z-0 " />
+            <div className="relative w-[1000px] h-[600px] border-[20px] m-10 border-purple-500 flex ">
+              <div className="flex flex-col mx-auto relative">
                 <div className="flex text-center mx-auto pl-20 ">
                   <p className="mr-2 ">
                     <img src={logo} alt="logo" className="w-[80px] " />
@@ -173,7 +165,7 @@ const Ginsti = () => {
 
         <div className="flex justify-center -mt-9">
           <button
-            className="bg-purple-600 p-2 rounded-xl hover:bg-purple-700 text-white"
+            className="bg-purple-600 p-2 rounded-xl hover:bg-purple-700 text-white z-10"
             onClick={onButtonClick}
           >
             Download Certificate
