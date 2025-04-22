@@ -19,6 +19,8 @@ import OwerriHome from './pages/OwerriHome';
 import OwerriCert from './pages/OwerriCert';
 import GinstiHome3 from './pages/GinstiHome3';
 import Ginsti3 from './pages/Ginsti3';
+import Ginsti4 from './pages/Ginsti4';
+import GinstiHome4 from './pages/GinstiHome4';
 
 
 function App() {
@@ -46,6 +48,8 @@ function App() {
         <Route path='/owerriCert' element={<OwerriCert />} />
         <Route path='/ginsti3' element={<Ginsti3 />} />
         <Route path='/ginstihome3' element={<GinstiHome3 />} />
+        <Route path='/ginsti4' element={<Ginsti4 />} />
+        <Route path='/ginstihome4' element={<GinstiHome4 />} />
       </Routes>
     </BrowserRouter>
   )

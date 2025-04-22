@@ -4,7 +4,7 @@ import logo from "../assets/ginsti.png";
 
 
 
-const GinstiHome3 = () => {
+const GinstiHome4 = () => {
   const [formData, setFormData] = useState({
     name: "",
   });
@@ -21,7 +21,7 @@ const GinstiHome3 = () => {
     Object.keys(formData).forEach((key) => {
         localStorage.setItem(key, formData[key]);
     });
-    navigate("/ginsti3");
+    navigate("/ginsti4");
   };
 
   return (
@@ -61,4 +61,4 @@ const GinstiHome3 = () => {
   );
 };
 
-export default GinstiHome3;
+export default GinstiHome4;
