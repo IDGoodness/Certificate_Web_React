@@ -80,7 +80,7 @@ const Ginsti2 = () => {
                   exploration of cutting-edge tools for analyzing genomic data.
                   Organized by Genomac Institute Inc.
                 </p>
-                <p className="font-bold">10th - 11th APRIL 2025</p>
+                <p className="font-bold">8th - 9th MAY 2025</p>
               </div>
 
               <div className="flex justify-between mx-32">
