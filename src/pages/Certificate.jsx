@@ -58,9 +58,9 @@ const Certificate = () => {
         <div
           ref={ref}
           id="certificateContent"
-          className="flex flex-col justify-center items-center bg-white "
+          className="flex flex-col justify-center items-center bg-white"
         >
-          <div className="relative w-[1000px] h-[600px] border flex ">
+          <div className="relative w-[1000px] h-[600px] border flex z-0 ">
             <div className="bg-gradient-to-b from-pink-400 via-purple-900 to-purple-900 w-[200px] h-[600px] ">
               <div className="flex ">
                 <div className="mx-auto">
@@ -113,7 +113,7 @@ const Certificate = () => {
               </div>
             </div>
 
-            <div className="w-[800px]">
+            <div className="w-[800px] z-0">
               <div className="bg-white w-[800px] lg:h-[600px] lg:ml-4 lg:p-10">
                 <div className="p-5 bg-purple-900 text-white text-4xl text-center tracking-widest uppercase ">
                   CERTIFICATE OF ParticipATION
@@ -188,7 +188,7 @@ const Certificate = () => {
         </div>
       </div>
 
-      <div className="flex justify-center -mt-9">
+      <div className="flex justify-center -mt-3 z-30">
         <button
           className="bg-purple-600 p-2 rounded-xl hover:bg-purple-700 text-white"
           onClick={onButtonClick}
