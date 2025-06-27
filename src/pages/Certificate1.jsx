@@ -529,7 +529,7 @@ const Certificate1 = () => {
                         className="w-[200px] h-[100px] -mb-5"
                       />
                     </div>
-                    <p className="font-semibold text-lg ">Aderinto Adeyemi</p>
+                    <p className="font-semibold text-lg ">Abraham Oluwaseun Adeyemi</p>
                     <p className="font-medium text-sm">Director, G-iHUb.</p>
                   </div>
                 </div>
