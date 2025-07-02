@@ -79,7 +79,7 @@ const GnaturesCert = () => {
               <p className='text-4xl font-semibold uppercase mx-auto -mt-1 ' >
                 Certificate of Completion
               </p>
-              <p className='text-center italic font-bold' >This is to certify that:</p>
+              <p className='text-center italic font-bold' >This certificate is presented to:</p>
               <p className='text-3xl text-center mt-[40px] mx-40 font-serif text-green-950 ' >
                   {formData.name}
               </p>
