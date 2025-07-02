@@ -77,7 +77,7 @@ const GnaturesCert = () => {
                 </p>
               </div>
               <p className='text-4xl font-semibold uppercase mx-auto -mt-1 ' >
-                Certificate of Participation
+                Certificate of Completion
               </p>
               <p className='text-center italic font-bold' >This is to certify that:</p>
               <p className='text-3xl text-center mt-[40px] mx-40 font-serif text-green-950 ' >
